@@ -1,0 +1,212 @@
+﻿@page
+@model BertLunch.Pages.PaymentPage.IndexModel
+@using Microsoft.Extensions.Configuration
+@using Model.DTO;
+@inject IConfiguration Configuration
+@{
+    ViewData["Title"] = "payment page";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+    var publishableKey = Configuration["Stripe:PublishKey"];
+}
+
+<section class="container py-5">
+    <div>
+        <h3 style="color:#223f49ff;">Payment</h3>
+    </div>
+    <div class="row gx-5">
+        <div class="col-sm-12 col-md-7">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="accordion" id="paymentAccordion">
+
+                        <div class="stripe mb-5">
+                            <div class="form_check">
+                                <input class="form_check_input" type="radio" name="paymentMethod"
+                                       id="stripePaymentRadio" data-toggle="collapse" data-target="#stripePaymentCollapse"
+                                       aria-expanded="true" checked aria-controls="stripePaymentCollapse">
+                                <label class="form-check-label" for="stripePaymentRadio">
+                                    <i class="fa-regular fa-credit-card"></i> &nbsp; Pay with Card
+                                </label>
+                                <div><hr /></div>
+                            </div>
+                            <div id="stripePaymentCollapse" class="accordion-collapse collapse show"
+                                 aria-labelledby="stripePaymentRadio" data-parent="#paymentAccordion">
+                                <div class="accordion-body">
+                                    <form class="stripe_form" asp-controller="Payment" asp-action="StripePayment" method="post" id="payment-form">
+                                        <div class="card-element-container">
+                                            <div class="stripe_card_info">
+                                                <label>Card number</label>
+                                                <div id="card-number-element" class="stripe-input"></div>
+                                            </div>
+                                            <div class="stripe_card_info">
+                                                <label>Expiry date</label>
+                                                <div id="card-expiry-element" class="stripe-input"></div>
+                                            </div>
+                                            <div class="stripe_card_info">
+                                                <label>CVC code</label>
+                                                <div id="card-cvc-element" class="stripe-input"></div>
+                                            </div>
+                                            
+                                        </div>
+                                        <input type="hidden" id="stripeToken" name="stripeToken" value="">
+                                        <div id="card-errors" style="color:red;" role="alert"></div>
+                                        <button type="submit" class="pay_button">Submit Payment</button>
+                                    </form>
+                                </div>
+                                <div><hr /></div>
+                            </div>
+                        </div>
+                        <div class="pay_cash">
+                            <div class="form_check">
+                                <input class="form_check_input" type="radio" name="paymentMethod"
+                                       id="cashPaymentRadio" data-toggle="collapse" data-target="#cashPaymentCollapse"
+                                       aria-expanded="false" aria-controls="cashPaymentCollapse">
+                                <label class="form-check-label" for="cashPaymentRadio">
+                                    <i class="fas fa-money-bill-wave"></i>&nbsp; Pay with Cash
+                                </label>
+                                <div><hr /></div>
+                            </div>
+                            <div id="cashPaymentCollapse" class="accordion-collapse collapse"
+                                 aria-labelledby="cashPaymentRadio" data-parent="#paymentAccordion">
+                                <div class="accordion-body">
+                                    <div>
+                                        Please pay the cashier upon picking up your order. 
+                                        Ensure you receive a payment receipt for your records.
+                                    </div>
+                                    <button type="button" class="pay_button mt-2" onclick="confirmCashPayment()">
+                                        Confirm Order
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-5">
+            <div class="row">
+                <div class="col-sm-12 basket_items time_section">
+                    <div class="pb-4"></div>
+
+                    @foreach (var item in ViewData["CartItems"] as List<CartItem>)
+                    {
+                        <div class="pb-2 px-3 basket_item_card">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="basket_img d-flex">
+                                        <img src="~/@Url.Content(@item.MenuImage)" alt="@item.MenuName" class="fluid" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 payment_bk_item_info basket_item_centralization">
+                                    <h6>@item.MenuName</h6>
+                                    <p>Quantity: @item.Quantity</p>
+                                </div>
+                                <div class="col-sm-4 basket_item_centralization align-items-center">
+                                    <div class="add_reduce_btns row d-flex justify-content-between">
+                                        <h4>@item.MenuPrice €</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container"><hr /></div>
+                        </div>  
+                    }
+                </div>
+                <div class="col-sm-12 sub_total_section" style="background-image: url('/img/homepage/texture_wood.png');">
+                    <div class="container pt-3">
+                        @* <div class="row">
+                            <div class="col-sm-12 col-md-8 total_quantity">
+                                <p class="text-black">total quantity</p>
+                            </div>
+                            <div class="col-sm-12 col-md-4 total_quantity">
+                                <p class="text-black text-end">2</p>
+                            </div>
+                        </div> *@
+                        <div class="row">
+                            <div class="col-sm-12 col-md-8 total_quantity">
+                                <p class="text-black">total price</p>
+                            </div>
+                            <div class="col-sm-12 col-md-4 total_quantity">
+                                <p class="text-black text-end" id="cart_total_price"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@section Scripts{
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        var stripePublishableKey = '@publishableKey';
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Initializing stripe
+            var stripe = Stripe(stripePublishableKey);
+            var elements = stripe.elements();
+
+            var style = {
+                base: {
+                    ':focus': {
+                        color: '#223f49ff', // Text color on focus
+                    },
+                }
+            };
+
+            // Creating and mounting card inputs
+            var cardNumber = elements.create('cardNumber', { style: style });
+            var cardExpiry = elements.create('cardExpiry', { style: style });
+            var cardCvc = elements.create('cardCvc', { style: style });
+
+            cardNumber.mount('#card-number-element');
+            cardExpiry.mount('#card-expiry-element');
+            cardCvc.mount('#card-cvc-element');
+
+            // Handling error messages for card
+            cardNumber.addEventListener('change', function (event) {
+                showCardError(event);
+            });
+
+            cardExpiry.addEventListener('change', function (event) {
+                showCardError(event);
+            });
+
+            cardCvc.addEventListener('change', function (event) {
+                showCardError(event);
+            });
+
+            function showCardError(event) {
+                var displayError = document.getElementById('card-errors');
+                if (event.error) {
+                    displayError.textContent = event.error.message;
+                } else {
+                    displayError.textContent = '';
+                }
+            }
+
+            // Handle form submission
+            var form = document.getElementById('payment-form');
+            form.addEventListener('submit', function (event) {
+                console.log(form);
+                event.preventDefault();
+                console.log('Stripe object on form submission:', stripe);
+
+                stripe.createToken(cardNumber).then(function (result) {
+                    console.log(result);
+                    if (result.error) {
+                        var errorElement = document.getElementById('card-errors');
+                        errorElement.textContent = result.error.message;
+                        console.log(errorElement);
+                    } else {
+                        document.getElementById('stripeToken').value = result.token.id;
+                        document.getElementById('payment-form').submit();
+                    }
+                })
+            })
+        });
+    </script>
+}

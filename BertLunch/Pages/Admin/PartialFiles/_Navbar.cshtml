@@ -1,0 +1,29 @@
+﻿@using Model;
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<AppUser> UserManager
+
+@{
+    var user = await UserManager.GetUserAsync(User);
+}
+
+
+<nav class="navbar navbar-expand background-secondary navbar-dark sticky-top px-4 py-0">
+    <span class="sidebar-toggler flex-shrink-0">
+        <i class="fa fa-bars" style="color:red;"></i>
+    </span>
+    <div class="navbar-nav align-items-center ms-auto">
+        <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                <img class="rounded-circle me-lg-2 profile" src="~/img/avatar-1577909_640.png" alt="user" style="width: 40px; height: 40px;">
+                <span class="d-none d-lg-inline-flex">Hello @user?.Psuedo !</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end background-secondary border-0 rounded-0 rounded-bottom m-0">
+                <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">My Profile</a>
+                <hr class="dropdown-divider">
+                <form id="logoutForm" class="logoutForm_admin" asp-area="Identity" asp-page="/ProfileView/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button id="logout" type="submit" class="logout_normal">Logout</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>

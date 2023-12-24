@@ -1,0 +1,47 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-area {
+        padding-top: 0;
+    }
+
+    /** Logo */
+    .header-area .main-header-area .logo {
+        text-align: left;
+    }
+    .header-area .main-header-area .logo img {
+        width: 110px;
+    }
+    .slider_area .single_slider {
+        height: 600px;
+    }
+    .header-area .main-header-area .main-menu ul li a i {
+        display: none !important;
+    }
+    .slider_area .single_slider .slider_text h3 {
+        font-size: 54px;
+    }
+
+    /** ABOUT SECTION */
+    .about_area {
+        padding-top: 80px;
+        padding-bottom: 80px
+    }
+
+    .about_area .about_thumb2 {
+        margin-bottom: 30px
+    }
+
+    /**=== MENU SECTION STYLES =====*/
+    .section_title h3 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .Delicious_area .single_delicious {
+        display: block !important;
+    }
+    .Delicious_area .single_delicious .info {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    /*=== MENU SECTION STYLES ENDS =====*/
+}

@@ -1,0 +1,1037 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BertLunch.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BertLunch.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\AdminStyles\\adminStyles.css",
+      "PackagePath": "staticwebassets\\css\\AdminStyles\\adminStyles.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\AdminStyles\\maxwidth575px.css",
+      "PackagePath": "staticwebassets\\css\\AdminStyles\\maxwidth575px.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\AdminStyles\\maxwidth991px.css",
+      "PackagePath": "staticwebassets\\css\\AdminStyles\\maxwidth991px.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\AdminStyles\\minwidth992px.css",
+      "PackagePath": "staticwebassets\\css\\AdminStyles\\minwidth992px.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\bootstrap-datetimepicker.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-datetimepicker.min.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\maxWidth767px.css",
+      "PackagePath": "staticwebassets\\css\\maxWidth767px.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\widthBetween768And991px.css",
+      "PackagePath": "staticwebassets\\css\\widthBetween768And991px.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\widthBetween992And1200px.css",
+      "PackagePath": "staticwebassets\\css\\widthBetween992And1200px.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\Logos\\transparent background\\All_white.png",
+      "PackagePath": "staticwebassets\\img\\Logos\\transparent background\\All_white.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\about\\1.png",
+      "PackagePath": "staticwebassets\\img\\about\\1.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\about\\2.png",
+      "PackagePath": "staticwebassets\\img\\about\\2.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\about\\about_1.png",
+      "PackagePath": "staticwebassets\\img\\about\\about_1.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\about\\about_2.png",
+      "PackagePath": "staticwebassets\\img\\about\\about_2.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\about\\small.png",
+      "PackagePath": "staticwebassets\\img\\about\\small.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\avatar-1577909_640.png",
+      "PackagePath": "staticwebassets\\img\\avatar-1577909_640.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\galary\\gallery_01.jpg",
+      "PackagePath": "staticwebassets\\img\\galary\\gallery_01.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\galary\\gallery_02.jpg",
+      "PackagePath": "staticwebassets\\img\\galary\\gallery_02.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\galary\\gallery_03.jpg",
+      "PackagePath": "staticwebassets\\img\\galary\\gallery_03.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\galary\\gallery_04.jpg",
+      "PackagePath": "staticwebassets\\img\\galary\\gallery_04.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\galary\\gallery_05.jpg",
+      "PackagePath": "staticwebassets\\img\\galary\\gallery_05.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\galary\\gallery_06.jpg",
+      "PackagePath": "staticwebassets\\img\\galary\\gallery_06.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\galary\\gallery_07.jpg",
+      "PackagePath": "staticwebassets\\img\\galary\\gallery_07.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\galary\\gallery_08.jpg",
+      "PackagePath": "staticwebassets\\img\\galary\\gallery_08.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\galary\\gallery_09.jpg",
+      "PackagePath": "staticwebassets\\img\\galary\\gallery_09.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\galary\\gallery_10.jpg",
+      "PackagePath": "staticwebassets\\img\\galary\\gallery_10.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\Picture1.png",
+      "PackagePath": "staticwebassets\\img\\homepage\\Picture1.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\blue_wall.jpg",
+      "PackagePath": "staticwebassets\\img\\homepage\\blue_wall.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\home_page.jpg",
+      "PackagePath": "staticwebassets\\img\\homepage\\home_page.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\menu\\Veg-Biryani.jpg",
+      "PackagePath": "staticwebassets\\img\\homepage\\menu\\Veg-Biryani.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\menu\\adar_mix.jpg",
+      "PackagePath": "staticwebassets\\img\\homepage\\menu\\adar_mix.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\menu\\club_sandwich.jpg",
+      "PackagePath": "staticwebassets\\img\\homepage\\menu\\club_sandwich.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\paralex.jpg",
+      "PackagePath": "staticwebassets\\img\\homepage\\paralex.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\texture.png",
+      "PackagePath": "staticwebassets\\img\\homepage\\texture.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\texture_wood.jpg",
+      "PackagePath": "staticwebassets\\img\\homepage\\texture_wood.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\texture_wood.png",
+      "PackagePath": "staticwebassets\\img\\homepage\\texture_wood.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\texture_wood1.png",
+      "PackagePath": "staticwebassets\\img\\homepage\\texture_wood1.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\white_wall.jpg",
+      "PackagePath": "staticwebassets\\img\\homepage\\white_wall.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menuImages\\burger-poulet-juteux-laitue-fraiche-frites-croustillantes-planche-bois.jpg",
+      "PackagePath": "staticwebassets\\img\\menuImages\\burger-poulet-juteux-laitue-fraiche-frites-croustillantes-planche-bois.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menuImages\\chicken-burger-bun-laitue-tomate-meaf-cheese-frites-mayonnaise-ketchup-side-view.jpg",
+      "PackagePath": "staticwebassets\\img\\menuImages\\chicken-burger-bun-laitue-tomate-meaf-cheese-frites-mayonnaise-ketchup-side-view.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menuImages\\delicious-goulash-ready-dinner.jpg",
+      "PackagePath": "staticwebassets\\img\\menuImages\\delicious-goulash-ready-dinner.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menuImages\\dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg",
+      "PackagePath": "staticwebassets\\img\\menuImages\\dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menuImages\\hamburger-sandwich-hamburgers-juteux-tomate-chou-rouge.jpg",
+      "PackagePath": "staticwebassets\\img\\menuImages\\hamburger-sandwich-hamburgers-juteux-tomate-chou-rouge.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menuImages\\high-angle-asian-rice-dish-with-meat.jpg",
+      "PackagePath": "staticwebassets\\img\\menuImages\\high-angle-asian-rice-dish-with-meat.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menuImages\\vegan-person-holds-up-wooden-coconut-buddha-bowl-full-healthy-greens-vegetables-grains-chopsticks.jpg",
+      "PackagePath": "staticwebassets\\img\\menuImages\\vegan-person-holds-up-wooden-coconut-buddha-bowl-full-healthy-greens-vegetables-grains-chopsticks.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menu\\menu_hero.jpg",
+      "PackagePath": "staticwebassets\\img\\menu\\menu_hero.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menu\\menu_item\\1.webp",
+      "PackagePath": "staticwebassets\\img\\menu\\menu_item\\1.webp"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menu\\menu_item\\10.jpg",
+      "PackagePath": "staticwebassets\\img\\menu\\menu_item\\10.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menu\\menu_item\\11.jpg",
+      "PackagePath": "staticwebassets\\img\\menu\\menu_item\\11.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menu\\menu_item\\12.jpeg",
+      "PackagePath": "staticwebassets\\img\\menu\\menu_item\\12.jpeg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menu\\menu_item\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\menu\\menu_item\\2.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menu\\menu_item\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\menu\\menu_item\\3.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menu\\menu_item\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\menu\\menu_item\\4.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menu\\menu_item\\5.png",
+      "PackagePath": "staticwebassets\\img\\menu\\menu_item\\5.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menu\\menu_item\\6.jpeg",
+      "PackagePath": "staticwebassets\\img\\menu\\menu_item\\6.jpeg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menu\\menu_item\\7.jpg",
+      "PackagePath": "staticwebassets\\img\\menu\\menu_item\\7.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menu\\menu_item\\8.jpg",
+      "PackagePath": "staticwebassets\\img\\menu\\menu_item\\8.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menu\\menu_item\\9.jpg",
+      "PackagePath": "staticwebassets\\img\\menu\\menu_item\\9.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\person.jpg",
+      "PackagePath": "staticwebassets\\img\\person.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\js\\basket.js",
+      "PackagePath": "staticwebassets\\js\\basket.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\js\\basketssss.js",
+      "PackagePath": "staticwebassets\\js\\basketssss.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\js\\vendor\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\vendor\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\js\\vendor\\jquery-1.12.4.min.js",
+      "PackagePath": "staticwebassets\\js\\vendor\\jquery-1.12.4.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\js\\vendor\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\vendor\\popper.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap-datetimepicker.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-datetimepicker.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\fontawesome\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\fontawesome\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\fontawesome\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\fontawesome\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\fontawesome\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\fontawesome\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\fontawesome\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\glyphicons-halflings\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\lib\\fonts\\glyphicons-halflings\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\glyphicons-halflings\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\lib\\fonts\\glyphicons-halflings\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\glyphicons-halflings\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\glyphicons-halflings\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\glyphicons-halflings\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\glyphicons-halflings\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\glyphicons-halflings\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\glyphicons-halflings\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\heavitas\\Heavitas.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\heavitas\\Heavitas.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\heavitas\\heavitas license.pdf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\heavitas\\heavitas license.pdf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\Commercial\\Free Font License\\FF EULA License ver2.2.pdf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\Commercial\\Free Font License\\FF EULA License ver2.2.pdf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\Commercial\\OTF\\NexaRustExtrasDemo-Icons.otf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\Commercial\\OTF\\NexaRustExtrasDemo-Icons.otf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\Commercial\\OTF\\NexaRustHandmadeDemo-Extended.otf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\Commercial\\OTF\\NexaRustHandmadeDemo-Extended.otf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\Commercial\\OTF\\NexaRustSansDemo-Black.otf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\Commercial\\OTF\\NexaRustSansDemo-Black.otf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\Commercial\\OTF\\NexaRustScriptLDemo-1.otf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\Commercial\\OTF\\NexaRustScriptLDemo-1.otf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\Commercial\\OTF\\NexaRustSlabDemo-BlackShadow1.otf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\Commercial\\OTF\\NexaRustSlabDemo-BlackShadow1.otf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\Installation Guide\\How to install your Fontfabric Fonts.pdf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\Installation Guide\\How to install your Fontfabric Fonts.pdf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustHandmade-Trial-Condensed.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustHandmade-Trial-Condensed.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustHandmade-Trial-Extended.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustHandmade-Trial-Extended.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustSans-Trial-Black2.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustSans-Trial-Black2.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustSans-Trial-BlackShadow1.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustSans-Trial-BlackShadow1.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustSans-Trial-Shadow.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustSans-Trial-Shadow.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustScriptB-Trial-3.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustScriptB-Trial-3.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustScriptB-Trial-Shadow.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustScriptB-Trial-Shadow.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustScriptB-Trial-Shadow2.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustScriptB-Trial-Shadow2.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustScriptR-Trial-4.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustScriptR-Trial-4.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustScriptR-Trial-Shadow.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustScriptR-Trial-Shadow.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustScriptR-Trial-Shadow4.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustScriptR-Trial-Shadow4.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustSlab-Trial-Black3.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustSlab-Trial-Black3.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustSlab-Trial-BlackShadow3.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustSlab-Trial-BlackShadow3.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\NexaRustSlab-Trial-Shadow.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\NexaRustSlab-Trial-Shadow.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\Trial Font License\\FF Trial EULAt ver1.0.pdf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\Trial Font License\\FF Trial EULAt ver1.0.pdf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustHandmade-Trial-Condensed.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustHandmade-Trial-Condensed.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustHandmade-Trial-Condensed.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustHandmade-Trial-Condensed.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustHandmade-Trial-Extended.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustHandmade-Trial-Extended.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustHandmade-Trial-Extended.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustHandmade-Trial-Extended.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSans-Trial-Black2.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSans-Trial-Black2.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSans-Trial-Black2.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSans-Trial-Black2.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSans-Trial-BlackShadow1.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSans-Trial-BlackShadow1.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSans-Trial-BlackShadow1.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSans-Trial-BlackShadow1.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSans-Trial-Shadow.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSans-Trial-Shadow.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSans-Trial-Shadow.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSans-Trial-Shadow.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptB-Trial-3.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptB-Trial-3.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptB-Trial-3.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptB-Trial-3.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptB-Trial-Shadow.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptB-Trial-Shadow.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptB-Trial-Shadow.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptB-Trial-Shadow.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptB-Trial-Shadow2.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptB-Trial-Shadow2.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptB-Trial-Shadow2.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptB-Trial-Shadow2.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptR-Trial-4.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptR-Trial-4.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptR-Trial-4.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptR-Trial-4.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptR-Trial-Shadow.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptR-Trial-Shadow.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptR-Trial-Shadow.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptR-Trial-Shadow.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptR-Trial-Shadow4.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptR-Trial-Shadow4.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptR-Trial-Shadow4.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustScriptR-Trial-Shadow4.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSlab-Trial-Black3.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSlab-Trial-Black3.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSlab-Trial-Black3.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSlab-Trial-Black3.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSlab-Trial-BlackShadow3.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSlab-Trial-BlackShadow3.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSlab-Trial-BlackShadow3.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSlab-Trial-BlackShadow3.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSlab-Trial-Shadow.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSlab-Trial-Shadow.woff"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSlab-Trial-Shadow.woff2",
+      "PackagePath": "staticwebassets\\lib\\fonts\\nexa_rust_sans\\WEB\\NexaRustSlab-Trial-Shadow.woff2"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\Bonuses and services.pdf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\Bonuses and services.pdf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Black Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Black Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Black.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Black.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Bold Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Bold Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Bold.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Bold.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Black Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Black Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Black.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Black.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Bold Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Bold Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Bold.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Bold.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed DemiBold Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed DemiBold Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed DemiBold.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed DemiBold.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed ExtraBold Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed ExtraBold Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed ExtraLight Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed ExtraLight Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Light Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Light Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Light.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Light.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Medium Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Medium Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Medium.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Medium.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Regular.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Regular.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Thin Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Thin Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Thin.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Compressed Thin.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Black Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Black Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Black.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Black.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Bold Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Bold Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Bold.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Bold.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed DemiBold Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed DemiBold Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed DemiBold.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed DemiBold.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed ExtraBold Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed ExtraBold Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed ExtraLight Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed ExtraLight Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Light Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Light Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Light.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Light.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Medium Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Medium Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Medium.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Medium.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Regular.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Regular.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Thin Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Thin Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Thin.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Condensed Thin.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial DemiBold Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial DemiBold Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial DemiBold.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial DemiBold.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial ExtraBold Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial ExtraBold Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial ExtraLight Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial ExtraLight Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Light Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Light Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Light.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Light.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Medium Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Medium Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Medium.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Medium.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Regular.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Regular.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Thin Italic.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Thin Italic.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Thin.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Thin.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Variable.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TT Rounds Neue Trial Variable.ttf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TypeType Trial License.pdf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TypeType Trial License.pdf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery-1.12.4.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-1.12.4.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BertLunch.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.BertLunch.props",
+      "PackagePath": "build\\BertLunch.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.BertLunch.props",
+      "PackagePath": "buildMultiTargeting\\BertLunch.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.BertLunch.props",
+      "PackagePath": "buildTransitive\\BertLunch.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

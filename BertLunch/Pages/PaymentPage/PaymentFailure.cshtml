@@ -1,0 +1,27 @@
+﻿@page
+@model BertLunch.Pages.PaymentPage.PaymentFailureModel
+@{
+    ViewData["Title"] = "Cart page";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<style>
+    body{
+        background: rgba(131,140,144,0.4);
+    }
+</style>
+
+<div class="payment_container">
+    <div class="payment_card">
+        <h1 class="payment_heading failure_header">Payment Failed!</h1>
+        <p class="message">We're sorry, but we weren't able to process your 
+            payment. Please check your payment information and try again, or use a 
+            different method.
+        </p>
+        @* <div class="failure-details">
+            <p><strong>Error Code:</strong> 102</p>
+            <p><strong>Message:</strong> Your card was declined.</p>
+        </div> *@
+        <a href="/PaymentPage/Index" class="try-again">Try Again</a>
+    </div>
+</div>

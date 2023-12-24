@@ -1,0 +1,52 @@
+﻿<header>
+    <div class="header-area">
+        <div id="sticky-header" class="main-header-area">
+            <div class="container-fluid">
+                <div class="header_bottom_border">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a href="/">
+                                    <img src="~/img/Logos/transparent background/All_white.png" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="/Menu/MenuItem">Menu pour la semaine</a></li> @* asp-page="./Menu/MenuItem" *@
+                                        <li><a asp-area="" asp-page="/Privacy">Privacy</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="say_hello">
+                                <a asp-controller="Admin" asp-action="Index">Panneau d'Administrative</a>
+                                <div class="dropdown_user">
+                                    <i class="fa-regular fa-user user_icon"></i>
+                                    <ul>
+                                        <partial name="./_LoginPartial" />
+                                    </ul>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="/Basket/Basket" class="cart_number" id="basket_info">
+                                            <i class="fa-solid fa-cart-shopping cart_icon"></i>
+                                            <span class="cart_data" id="cart_quantity">0</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"><i class="fa-solid fa-bars"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>

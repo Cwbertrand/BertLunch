@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico">
+    <title>@ViewData["Title"] - BertLunch</title>
+
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
+
+    @*==== Fonts ========*@
+    <link rel="stylesheet" href="~/lib/fonts/heavitas" />
+
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/maxWidth767px.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/widthBetween768And991px.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/widthBetween768And991px.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <partial name="BasicPartials/_Navbar" />
+
+
+    <div id="content">
+        @RenderBody()
+    </div>
+
+
+    <partial name="BasicPartials/_Footer" />
+
+    <script src="~/lib/jquery-1.12.4.min.js"></script>
+    <script src="~/lib/popper.min.js"></script>
+    <script src="~/lib/bootstrap.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="~/js/main.js" asp-append-version="true"></script>
+    <script src="~/js/basket.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

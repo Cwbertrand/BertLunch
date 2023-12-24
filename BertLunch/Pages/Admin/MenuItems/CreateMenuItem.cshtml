@@ -1,0 +1,135 @@
+﻿@model Model.MenuItem
+@{
+    ViewData["Title"] = "create_menu_item";
+    Layout = "~/Pages/Shared/_AdminLayout.cshtml";
+}
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-12">
+            <div class="container">
+                <div class="background-secondary container-items h-100 p-4">
+                    <form class="container" enctype="multipart/form-data" asp-controller="MenuItem" asp-action="CreateMenuItem">
+                        @Html.AntiForgeryToken()
+                        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                        <h6 class="mb-4 text-white">Nouvelle menu</h6>
+
+                        <div class="form-floating mb-3 w-50">
+                            <input class="form-control" id="floatingInput"
+                                   asp-for="MenuName" autocomplete="off" aria-required="true" />
+                            <label for="floatingInput" asp-for="MenuName">Menu name</label>
+                            <span asp-validation-for="MenuName" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating mb-3 w-50">
+                            <input class="form-control" id="floatingNumber"
+                                   asp-for="Price" autocomplete="off" aria-required="true" type="number" min="1"/>
+                            <label for="floatingNumber" asp-for="Price">Price</label>
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+                        @* <div class="form-floating mb-3 w-50">
+                            @foreach (var item in M)
+                            {
+                                
+                            }
+                            @Html.DropDownList("CategoryId", Categories as SelectList,
+                            "Select Category", new { @class = "form-select" })
+                            <span asp-validation-for="CategoryId" class="text-danger"></span>
+                            <label for="floatingSelect">Category</label>
+                        </div> *@
+                        <div class="form-floating mb-3 w-50">
+                            @Html.DropDownList("MenuCategoryId", ViewBag.MenuCategories as SelectList,
+                                "Select a menu category", new { @class = "form-select" })
+                            <label for="floatingSelect">Menu category</label>
+                            <span asp-validation-for="MenuCategoryId" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" asp-for="Ingredient"
+                                      id="floatingTextarea" style="height: 150px;"></textarea>
+                            <label asp-for="Ingredient" for="floatingTextarea">Ingredient</label>
+                            <span asp-validation-for="Ingredient" class="text-danger"></span>
+                        </div>
+                        <fieldset class="row mb-3 mt-4">
+                            <legend class="col-form-label col-sm-2 pt-0 text-secondary">Menu availability</legend>
+                            <div class="col-sm-10 d-flex mb-3">
+                                <div class="form-check me-5">
+                                    <input class="form-check-input" type="radio" asp-for="IsAvailable"
+                                           id="gridRadios1" value="true" >
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Menu is available
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" asp-for="IsAvailable"
+                                           id="gridRadios2" value="false" >
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Menu is not available
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" asp-for="Description"
+                                      id="floatingTextarea" style="height: 150px;"></textarea>
+                            <label asp-for="Description" for="floatingTextarea">Description</label>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        <div class="mt-3 w-50">
+                            <label asp-for="ImageFile" for="formFileLg" class="form-label text-secondary">Upload the item photo</label>
+                            <input asp-for="ImageFile" class="form-control form-control-lg bg-dark" aria-required="true" id="formFileLg" type="file">
+                            <span asp-validation-for="ImageFile" class="text-danger"></span>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" name="submit" formmethod="post">Submit</button>
+                        </div>
+
+
+
+
+
+
+
+                        @* <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword"
+                                   placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                            <span asp-validation-for="" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Works with selects</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here"
+                                      id="floatingTextarea" style="height: 150px;"></textarea>
+                            <label for="floatingTextarea">Comments</label>
+                        </div>
+                        <fieldset class="row mb-3 mt-4">
+                            <legend class="col-form-label col-sm-2 pt-0 text-secondary">Radios</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="radio" name="gridRadios"
+                                           id="gridRadios1" value="option1">
+                                    <label class="form-check-label" for="gridRadios1">
+                                        First radio
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios"
+                                           id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Second radio
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset> *@
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

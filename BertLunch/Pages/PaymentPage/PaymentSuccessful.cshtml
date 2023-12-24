@@ -1,0 +1,30 @@
+﻿@page
+@model BertLunch.Pages.PaymentPage.PaymentSuccessfulModel
+@{
+    ViewData["Title"] = "Cart page";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<style>
+body{
+    background: rgba(131,140,144,0.4);
+}
+</style>
+
+<div class="payment_container">
+    <div class="payment_card">
+        <h1 class="payment_heading success_header">Payment Successful!</h1>
+        <p class="message">
+            Thank you for your purchase. Your transaction has 
+            been completed, and a receipt for your purchase has been emailed to you. 
+            You may log in to your account at www.paypal.com to view details of this 
+            transaction.
+        </p>
+        @* <div class="success-details">
+            <p><strong>Transaction ID:</strong> 1234567890</p>
+            <p><strong>Date:</strong> December 22, 2023</p>
+            <p><strong>Amount:</strong> $150.00</p>
+        </div> *@
+        <a href="/" class="go_to_account_btn payment_btn">Go To Your account</a>
+        <a href="/" class="continue_shopping_btn payment_btn">Continue Shopping</a>
+    </div>
+</div>

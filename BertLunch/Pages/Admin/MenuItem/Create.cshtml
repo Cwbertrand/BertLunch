@@ -1,0 +1,100 @@
+﻿@page
+@model BertLunch.Pages.Admin.MenuItem.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Pages/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-12">
+            <div class="container">
+                <div class="background-secondary container-items h-100 p-4">
+                    <form class="container" enctype="multipart/form-data" method="post">
+                        @Html.AntiForgeryToken()
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-floating mb-3 w-50">
+                            <input class="form-control" id="floatingInput"
+                                   asp-for="MenuItem.MenuName" autocomplete="on" aria-required="true" />
+                            <label for="floatingInput" asp-for="MenuItem.MenuName">Menu name</label>
+                            <span asp-validation-for="MenuItem.MenuName" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating mb-3 w-50">
+                            <input class="form-control" id="floatingNumber"
+                                   asp-for="MenuItem.Price" autocomplete="off" aria-required="true" type="number" min="1" />
+                            <label for="floatingNumber" asp-for="MenuItem.Price">Price</label>
+                            <span asp-validation-for="MenuItem.Price" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="MenuItem.EndedAt" class="control-label"></label>
+                            <input asp-for="MenuItem.EndedAt" class="form-control" />
+                            <span asp-validation-for="MenuItem.EndedAt" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating mb-3 w-50">
+                            <select asp-for="MenuItem.CategoryId" class="form-select" asp-items="ViewBag.CategoryId">
+                                <option value="">Choisir le category</option>
+                            </select>
+                            <label asp-for="MenuItem.CategoryId" for="floatingSelect">Category</label>
+                            <span asp-validation-for="MenuItem.CategoryId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating mb-3 w-50">
+                            <select asp-for="MenuItem.MenuCategoryId" class="form-select" asp-items="ViewBag.MenuCategoryId">
+                                <option value="">Choisir le category</option>
+                            </select>
+                            <label asp-for="MenuItem.MenuCategoryId" for="floatingSelect">Menu category</label>
+                            <span asp-validation-for="MenuItem.MenuCategoryId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" asp-for="MenuItem.Ingredient"
+                                      id="floatingTextarea" style="height: 150px;"></textarea>
+                            <label asp-for="MenuItem.Ingredient" for="floatingTextarea">Ingredient</label>
+                            <span asp-validation-for="MenuItem.Ingredient" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group form-check mt-3 pt-2">
+                            <label class="form-check-label text-white">
+                                <input class="form-check-input" asp-for="MenuItem.IsWeek" /> Item available for the week?
+                            </label>
+                        </div>
+                        <div class="form-group form-check mb-3">
+                            <label class="form-check-label text-white">
+                                <input class="form-check-input" asp-for="MenuItem.IsAvailable" /> Item in stock?
+                            </label>
+                        </div>
+
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" asp-for="MenuItem.Description"
+                                      id="floatingTextarea" style="height: 150px;"></textarea>
+                            <label asp-for="MenuItem.Description" for="floatingTextarea">Description</label>
+                            <span asp-validation-for="MenuItem.Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="mt-3 w-50">
+                            <label asp-for="MenuItem.ImageFile" for="formFileLg" class="form-label text-secondary">Upload the item photo</label>
+                            <input asp-for="MenuItem.ImageFile" class="form-control form-control-lg bg-dark" aria-required="true" id="formFileLg" type="file">
+                            <span asp-validation-for="MenuItem.ImageFile" class="text-danger"></span>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <div>
+                                <a asp-page="Index">Back to List</a>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Create" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

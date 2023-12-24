@@ -1,0 +1,22 @@
+@media (min-width: 992px) and (max-width: 1200px) {
+    .header-area .main-header-area .logo {
+        text-align: left;
+    }
+    .header-area .main-header-area .main-menu ul li a {
+        font-size: 15px;
+    }
+
+    /**=== MENU SECTION STYLES =====*/
+    .section_title h3 {
+        font-size: 35px;
+        line-height: 42px;
+    }
+
+
+    .about_area {
+        padding-top: 100px;
+        padding-bottom: 100px
+    }
+
+    /*=== MENU SECTION STYLES ENDS =====*/
+}

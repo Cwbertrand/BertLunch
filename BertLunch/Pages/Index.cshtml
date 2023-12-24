@@ -1,0 +1,301 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+
+<section class="hero general_section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.10),rgba(0, 0, 0, 0.6)),url('/img/homepage/home_page.jpg');">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-xl-9 col-md-9 col-md-12">
+                <div class="hero_text text-center">
+                    <h1>
+                        Fresh and Delicious Food
+                        For your Health
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="food_and_about general_section">
+    <div class="py-5">
+        <h2 class="text-center">Our precious meals</h2>
+        <div class="new_overlay">
+            <div class="container">
+                <div class="row envelop_card">
+                    @foreach (var item in Model.MenuItem)
+                    {
+                        <div class="col-sm-6 col-lg-4 p-3 overlay_color">
+                            <div class="menu_item">
+                                <div class="menu_item_overlay">
+                                    <img data-aos="fade-right" data-aos-duration="2000"
+                                         src="@Url.Content(@item.Image)" alt="@item.MenuName" class="card-img-top h-100">
+                                </div>
+                                <div data-aos="fade-left" class="menu_caption">@item.MenuName</div>
+                            </div>
+                        </div>
+                    }
+                    
+                </div>
+                <div class="separator"></div>
+                <div class="row about_section">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="about_thumb2 d-flex">
+                            <div class="img_1">
+                                <img data-aos="fade-up" data-aos-duration="2000" src="img/about/1.png" alt="">
+                            </div>
+                            <div class="img_2">
+                                <img data-aos="fade-down" data-aos-duration="2000" src="img/about/2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5">
+                        <div class="about_info" data-aos="fade-right" data-aos-duration="700">
+                            <div class="pb-3">
+                                <h3>
+                                    We Serve Fresh and <br>
+                                    Delicious Food
+                                </h3>
+                            </div>
+                            <p>
+                                Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare
+                                dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
+                                sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.
+                            </p>
+                            <a href="#" class="line-button">Learn More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="parallax_section" style="background-image: url('/img/homepage/paralex.jpg');"></section>
+<section class="gallery_section" style="background-image: url('/img/homepage/texture_wood.jpg');">
+    <div class="container h-100">
+        <div class="row">
+            <div class="col-12">
+                <div class="wow fadeIn pt-5 mt-3" data-wow-duration="1s" data-wow-delay="0.1s" data-aos="fade-down" data-aos-duration="2000">
+                    <h2 class="block-title text-center">
+                        Our Gallery
+                    </h2>
+                    <p class="title-caption text-center text-dark">There are many variations of passages of Lorem Ipsum available </p>
+                </div>
+                <div class="gal-container clearfix row" data-aos="fade-up" data-aos-duration="700">
+                    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#1">
+                                <img src="img/galary/gallery_01.jpg" alt="" />
+                            </a>
+                            <div class="modal fade" id="1" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="img/galary/gallery_01.jpg" alt="" />
+                                        </div>
+                                        <div class="col-md-12 description">
+                                            <h4>This is the 1 one on my Gallery</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#2">
+                                <img src="img/galary/gallery_02.jpg" alt="" />
+                            </a>
+                            <div class="modal fade" id="2" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="img/galary/gallery_02.jpg" alt="" />
+                                        </div>
+                                        <div class="col-md-12 description">
+                                            <h4>This is the 2 one on my Gallery</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#3">
+                                <img src="img/galary/gallery_03.jpg" alt="" />
+                            </a>
+                            <div class="modal fade" id="3" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="img/galary/gallery_03.jpg" alt="" />
+                                        </div>
+                                        <div class="col-md-12 description">
+                                            <h4>This is the 3 one on my Gallery</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#4">
+                                <img src="img/galary/gallery_04.jpg" alt="" />
+                            </a>
+                            <div class="modal fade" id="4" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="img/galary/gallery_04.jpg" alt="" />
+                                        </div>
+                                        <div class="col-md-12 description">
+                                            <h4>This is the 4 one on my Gallery</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#5">
+                                <img src="img/galary/gallery_05.jpg" alt="" />
+                            </a>
+                            <div class="modal fade" id="5" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="img/galary/gallery_05.jpg" alt="" />
+                                        </div>
+                                        <div class="col-md-12 description">
+                                            <h4>This is the 5 one on my Gallery</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#9">
+                                <img src="img/galary/gallery_06.jpg" alt="" />
+                            </a>
+                            <div class="modal fade" id="9" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="img/galary/gallery_06.jpg" alt="" />
+                                        </div>
+                                        <div class="col-md-12 description">
+                                            <h4>This is the 6 one on my Gallery</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#10">
+                                <img src="img/galary/gallery_07.jpg" alt="" />
+                            </a>
+                            <div class="modal fade" id="10" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="img/galary/gallery_07.jpg" alt="" />
+                                        </div>
+                                        <div class="col-md-12 description">
+                                            <h4>This is the 7 one on my Gallery</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#11">
+                                <img src="img/galary/gallery_08.jpg" alt="" />
+                            </a>
+                            <div class="modal fade" id="11" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="img/galary/gallery_08.jpg" alt="" />
+                                        </div>
+                                        <div class="col-md-12 description">
+                                            <h4>This is the 8 one on my Gallery</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#12">
+                                <img src="img/galary/gallery_09.jpg" alt="" />
+                            </a>
+                            <div class="modal fade" id="12" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="img/galary/gallery_09.jpg" alt="" />
+                                        </div>
+                                        <div class="col-md-12 description">
+                                            <h4>This is the 9 one on my Gallery</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="box">
+                            <a href="#" data-toggle="modal" data-target="#13">
+                                <img src="img/galary/gallery_10.jpg" alt="" />
+                            </a>
+                            <div class="modal fade" id="13" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        <div class="modal-body">
+                                            <img src="img/galary/gallery_10.jpg" alt="" />
+                                        </div>
+                                        <div class="col-md-12 description">
+                                            <h4>This is the 10 one on my Gallery</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts {
+    <script>
+        AOS.init();
+    </script>
+}
+
+
+

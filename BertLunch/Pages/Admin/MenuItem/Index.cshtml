@@ -1,0 +1,55 @@
+﻿@page
+@model BertLunch.Pages.Admin.MenuItem.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="background-secondary rounded h-100 p-4">
+                <div class="d-flex justify-content-between mb-3">
+                    <h6 class="mb-4 text-white">List of menu item</h6>
+                    <a class="create_btn btn" asp-page="Create">Create a menu category</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table style_table_header">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Item name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Availability</th>
+                                <th scope="col">Time it ends</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Sub Category</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.MenuItem)
+                            {
+                                <tr>
+                                    <th scope="row">@Html.DisplayFor(modelItem => item.Id)</th>
+                                    <td>@Html.DisplayFor(modelItem => item.MenuName)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Price) €</td>
+                                    <td>@Html.DisplayFor(modelItem => item.IsAvailable)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.EndedAt)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.MenuCategory.Name)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Category.Label)</td>
+                                    <td>
+                                        <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                                        <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                                        <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

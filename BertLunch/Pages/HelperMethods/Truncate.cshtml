@@ -1,0 +1,26 @@
+﻿@page
+@model BertLunch.Pages.HelperMethods.TruncateModel
+
+@{
+    @functions {
+        public static string TruncateWords(string input, int maxWords)
+        {
+            if (!string.IsNullOrEmpty(input))
+            {
+                string[] words = input.Split(' ');
+
+                if (words.Length > maxWords)
+                {
+                    string truncatedText = string.Join(" ", words.Take(maxWords));
+                    return truncatedText + "...";
+                }
+                else
+                {
+                    return input;
+                }
+            }
+
+            return string.Empty;
+        }
+    }
+}

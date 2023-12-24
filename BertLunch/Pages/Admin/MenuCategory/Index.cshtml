@@ -1,0 +1,45 @@
+﻿@page
+@model BertLunch.Pages.Admin.MenuCategory.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="background-secondary rounded h-100 p-4">
+                <div class="d-flex justify-content-between mb-3">
+                    <h6 class="mb-4 text-white">List of menu category</h6>
+                    <a class="create_btn btn" asp-page="Create">Create a menu category</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table style_table_header">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">@Html.DisplayNameFor(model => model.MenuCategory[0].Name)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.MenuCategory)
+                            {
+                                <tr>
+                                    <th scope="row">@Html.DisplayFor(modelItem => item.Id)</th>
+                                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                                    <td>
+                                        <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                                        <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                                        <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
