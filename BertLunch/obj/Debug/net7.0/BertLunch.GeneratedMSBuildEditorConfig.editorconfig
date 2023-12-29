@@ -16,6 +16,74 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Manage/Command.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxNYW5hZ2VcQ29tbWFuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Manage/EnableAuthenticator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Manage/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxNYW5hZ2VcUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Manage/_ProfileLayOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxNYW5hZ2VcX1Byb2ZpbGVMYXlPdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Security/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTZWN1cml0eVxDb25maXJtRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Security/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTZWN1cml0eVxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Security/Lockout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTZWN1cml0eVxMb2Nrb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Security/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTZWN1cml0eVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Security/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTZWN1cml0eVxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Security/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTZWN1cml0eVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Security/ResendEmailConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTZWN1cml0eVxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/Security/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTZWN1cml0eVxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Account/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Admin/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,14 +128,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTWVudUNhdGVnb3J5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Admin/MenuItems/CreateMenuItem.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTWVudUl0ZW1zXENyZWF0ZU1lbnVJdGVtLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Admin/MenuItems/MenuItemIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTWVudUl0ZW1zXE1lbnVJdGVtSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Admin/MenuItem/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTWVudUl0ZW1cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -96,6 +156,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUGFydGlhbEZpbGVzXF9TaWRlYmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Admin/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Admin/User/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlclxFZGl0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Admin/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Basket/Basket.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFza2V0XEJhc2tldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -112,12 +184,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGVscGVyTWV0aG9kc1xUcnVuY2F0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/HelperMethods/_ReusableModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGVscGVyTWV0aG9kc1xfUmV1c2FibGVNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Homepage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Legal/PrivacyPolicy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVnYWxcUHJpdmFjeVBvbGljeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Menu/MenuItem.cshtml]
@@ -138,66 +218,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/Account/ConfirmEmail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/Account/ForgotPassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/Account/Lockout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/Account/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcQWNjb3VudFxMb2dpbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/Account/Logout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcQWNjb3VudFxMb2dvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/Account/Manage/EnableAuthenticator.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/Account/Manage/_ManageNav.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/Account/Manage/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/Account/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/Account/ResendEmailConfirmation.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/Account/ResetPassword.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/Account/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/ProfileView/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVZpZXdcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Shared/BasicPartials/_Footer.cshtml]

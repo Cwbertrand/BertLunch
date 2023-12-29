@@ -1017,6 +1017,174 @@
       "PackagePath": "staticwebassets\\lib\\popper.min.js"
     },
     {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\.gitignore",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\.gitignore"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\README.md",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\README.md"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\SECURITY.md",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\SECURITY.md"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\advertising.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\advertising.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\css\\tarteaucitron.css",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\css\\tarteaucitron.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.ar.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.ar.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.bg.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.bg.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.ca.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.ca.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.cn.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.cn.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.cs.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.cs.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.da.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.da.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.de.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.de.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.el.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.el.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.en.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.en.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.es.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.es.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.et.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.et.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.fi.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.fi.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.fr.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.fr.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.hu.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.hu.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.it.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.it.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.ja.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.ja.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.lb.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.lb.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.lt.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.lt.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.lv.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.lv.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.nl.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.nl.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.no.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.no.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.oc.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.oc.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.pl.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.pl.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.pt.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.pt.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.ro.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.ro.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.ru.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.ru.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.se.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.se.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.sk.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.sk.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.sv.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.sv.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.tr.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.tr.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.uk.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.uk.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.vi.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.vi.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\lang\\tarteaucitron.zh.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\lang\\tarteaucitron.zh.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\package.json",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\package.json"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\tarteaucitron.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\tarteaucitron.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\tarteaucitron\\tarteaucitron.services.js",
+      "PackagePath": "staticwebassets\\lib\\tarteaucitron\\tarteaucitron.services.js"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BertLunch.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

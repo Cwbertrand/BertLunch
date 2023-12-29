@@ -13,7 +13,7 @@
 
     button#logout:hover,
     a#manage:hover {
-        background: #1A0D01;
+        background: #fb8500;
         transition: ease .3s;
     }
 </style>
@@ -21,14 +21,14 @@
 @if (SignInManager.IsSignedIn(User))
 {
 
-    <a id="manage" class="nav-link text-dark" style="color: #fff !important;" asp-area="Identity" asp-page="/ProfileView/Account/Manage/Index" title="Manage">Profil</a>
+    <a id="manage" class="nav-link text-dark" style="color: #fff !important;" asp-page="/Account/Manage/Profile" title="Manage">Profil</a>
 
-    <form id="logoutForm" class="form-inline" asp-page="/ProfileView/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+    <form id="logoutForm" class="form-inline" asp-page="/Account/Security/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
             <button id="logout" type="submit" class="nav-link btn btn-link text-dark border-0">Logout</button>
         </form>
 }
 else
 {
-        <a class="nav-link text-dark" id="register" asp-page="/ProfileView/Account/Register">Register</a>
-    <a class="nav-link text-dark" id="login" asp-page="/ProfileView/Account/Login">Login</a>
+    <a class="nav-link text-white" id="register" asp-page="/Account/Security/Register">Register</a>
+    <a class="nav-link text-white" id="login" asp-page="/Account/Security/Login">Login</a>
 }

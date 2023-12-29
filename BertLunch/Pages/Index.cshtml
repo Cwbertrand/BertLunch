@@ -1,4 +1,5 @@
 ﻿@page
+@using BertLunch.Pages.HelperMethods;
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -29,7 +30,7 @@
                     @foreach (var item in Model.MenuItem)
                     {
                         <div class="col-sm-6 col-lg-4 p-3 overlay_color">
-                            <div class="menu_item">
+                            <div class="menu_item" data-bs-toggle="modal" data-bs-target="#detailsItemModal" onclick="populateAndShowModal('@item.Id')">
                                 <div class="menu_item_overlay">
                                     <img data-aos="fade-right" data-aos-duration="2000"
                                          src="@Url.Content(@item.Image)" alt="@item.MenuName" class="card-img-top h-100">
@@ -291,6 +292,8 @@
         </div>
     </div>
 </section>
+
+<partial name="HelperMethods/_ReusableModal" model="new ReusableModalModel{}" />
 @section Scripts {
     <script>
         AOS.init();

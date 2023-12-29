@@ -1,5 +1,6 @@
 ﻿@page
 @model BertLunch.Pages.PaymentPage.IndexModel
+@using BertLunch.Pages.HelperMethods;
 @using Microsoft.Extensions.Configuration
 @using Model.DTO;
 @inject IConfiguration Configuration
@@ -95,7 +96,7 @@
                         <div class="pb-2 px-3 basket_item_card">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <div class="basket_img d-flex">
+                                    <div class="basket_img d-flex" data-bs-toggle="modal" data-bs-target="#detailsItemModal" onclick="populateAndShowModal('@item.ProductId')">
                                         <img src="~/@Url.Content(@item.MenuImage)" alt="@item.MenuName" class="fluid" />
                                     </div>
                                 </div>
@@ -210,3 +211,5 @@
         });
     </script>
 }
+
+<partial name="HelperMethods/_ReusableModal" model="new ReusableModalModel{}" />

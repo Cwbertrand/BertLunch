@@ -4,6 +4,7 @@ using Model.Data;
 using Model;
 using BertLunch.Services;
 using Stripe;
+using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("BertLunchContextConnection")
@@ -12,7 +13,18 @@ var connectionString = builder.Configuration.GetConnectionString("BertLunchConte
 builder.Services.AddDbContext<BertLunchContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
-builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<BertLunchContext>();
+builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<BertLunchContext>();
+
+// Defining the role policy
+builder.Services.AddAuthorization(opt => opt.AddPolicy("Admin", policy => policy.RequireRole("Admin")));
+
+
+// Filtering routes with roles
+builder.Services.AddControllersWithViews(opt => opt.Filters.Add(new RoutingRestriction()));
+builder.Services.AddRazorPages(opt => opt.Conventions.AuthorizeFolder("/Admin", "Admin"));
+
 //Session with cookie
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
@@ -26,6 +38,7 @@ builder.Services.AddScoped<BasketService>();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+//builder.Services.AccessDeniedPath = "/";
 
 var app = builder.Build();
 
@@ -54,6 +67,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
+//app.MapRazorPages("Admin", "/Admin");
 
 // Stripe configuration
 StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>(); 

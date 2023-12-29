@@ -5,82 +5,205 @@
     ViewData["Title"] = "Edit";
     Layout = "~/Pages/Shared/_AdminLayout.cshtml";
 }
+<style>
+    .dropzone .dz-preview .dz-image img {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
 
-<h1>Edit</h1>
+    .dropzone .dz-message {
+        text-align: center;
+        margin: .5em 0;
+    }
+</style>
 
-<h4>MenuItem</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="MenuItem.Id" />
-            <div class="form-group">
-                <label asp-for="MenuItem.MenuName" class="control-label"></label>
-                <input asp-for="MenuItem.MenuName" class="form-control" />
-                <span asp-validation-for="MenuItem.MenuName" class="text-danger"></span>
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-12">
+            <div class="container">
+                <div class="background-secondary container-items h-100 p-4">
+                    <form class="container" id="dropzone_form_edit">
+                        @Html.AntiForgeryToken()
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-floating mb-3 w-50">
+                            <input class="form-control input_for_dropzone_edit" id="floatingMenuName"
+                                   asp-for="MenuItem.MenuName" autocomplete="on" aria-required="true" />
+                            <label for="floatingMenuName" asp-for="MenuItem.MenuName">Menu name</label>
+                            <span asp-validation-for="MenuItem.MenuName" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating mb-3 w-50">
+                            <input class="form-control input_for_dropzone_edit" id="floatingPrice"
+                                   asp-for="MenuItem.Price" autocomplete="off" aria-required="true" min="1" step="0.01" />
+                            <label for="floatingPrice" asp-for="MenuItem.Price">Price</label>
+                            <span asp-validation-for="MenuItem.Price" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="MenuItem.EndedAt" class="control-label"></label>
+                            <input asp-for="MenuItem.EndedAt" class="form-control input_for_dropzone_edit" />
+                            <span asp-validation-for="MenuItem.EndedAt" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating mb-3 w-50">
+                            <select asp-for="MenuItem.CategoryId" class="form-select input_for_dropzone_edit" id="floatingCategory" asp-items="ViewBag.CategoryId">
+                                <option value="">Choisir le category</option>
+                            </select>
+                            <label asp-for="MenuItem.CategoryId" for="floatingCategory">Category</label>
+                            <span asp-validation-for="MenuItem.CategoryId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating mb-3 w-50">
+                            <select asp-for="MenuItem.MenuCategoryId" class="form-select input_for_dropzone_edit" id="floatingMenuCategory" asp-items="ViewBag.MenuCategoryId">
+                                <option value="">Choisir le category</option>
+                            </select>
+                            <label asp-for="MenuItem.MenuCategoryId" for="floatingMenuCategory">Menu category</label>
+                            <span asp-validation-for="MenuItem.MenuCategoryId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating">
+                            <textarea class="form-control input_for_dropzone_edit" placeholder="Leave a comment here" asp-for="MenuItem.Ingredient"
+                                      id="floatingTextarea" style="height: 150px;"></textarea>
+                            <label asp-for="MenuItem.Ingredient" for="floatingTextarea">Ingredient</label>
+                            <span asp-validation-for="MenuItem.Ingredient" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group form-check mt-3 pt-2">
+                            <label class="form-check-label text-white">
+                                <input class="form-check-input input_for_dropzone_edit" asp-for="MenuItem.IsWeek" /> Item available for the week?
+                            </label>
+                        </div>
+                        <div class="form-group form-check mb-3">
+                            <label class="form-check-label text-white">
+                                <input class="form-check-input input_for_dropzone_edit" asp-for="MenuItem.IsAvailable" /> Item in stock?
+                            </label>
+                        </div>
+
+                        <div class="form-floating">
+                            <textarea class="form-control input_for_dropzone_edit" placeholder="Leave a comment here" asp-for="MenuItem.Description"
+                                      id="description" style="height: 150px;"></textarea>
+                            <label asp-for="MenuItem.Description" for="description">Description</label>
+                            <span asp-validation-for="MenuItem.Description" class="text-danger"></span>
+                        </div>
+                        
+                        <div id="myDropzone_edit" class="dropzone mt-3 w-50 bg-dark d-flex align-items-center">
+                            <input type="file" name="editImageName" value="" hidden />
+                            @if (Model.MenuItem.Image != null)
+                            {
+                                <div class="dz-preview dz-file-preview-edit ">
+                                    <div class="dz-image">
+                                        <img data-dz-thumbnail src="@Url.Content(Model.MenuItem.Image)" alt="@Model.MenuItem.MenuName" />
+                                    </div>
+                                </div>
+                            }
+                            <div class="dz-message text-white-50">Drag a new image here to update or click to select.</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <div>
+                                <a asp-page="Index">Back to List</a>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" name="submit" id="edit_menu_item_btn">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="MenuItem.Ingredient" class="control-label"></label>
-                <input asp-for="MenuItem.Ingredient" class="form-control" />
-                <span asp-validation-for="MenuItem.Ingredient" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MenuItem.Description" class="control-label"></label>
-                <input asp-for="MenuItem.Description" class="form-control" />
-                <span asp-validation-for="MenuItem.Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MenuItem.Price" class="control-label"></label>
-                <input asp-for="MenuItem.Price" class="form-control" />
-                <span asp-validation-for="MenuItem.Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MenuItem.Image" class="control-label"></label>
-                <input asp-for="MenuItem.Image" class="form-control" />
-                <span asp-validation-for="MenuItem.Image" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MenuItem.CreatedAt" class="control-label"></label>
-                <input asp-for="MenuItem.CreatedAt" class="form-control" />
-                <span asp-validation-for="MenuItem.CreatedAt" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MenuItem.EndedAt" class="control-label"></label>
-                <input asp-for="MenuItem.EndedAt" class="form-control" />
-                <span asp-validation-for="MenuItem.EndedAt" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="MenuItem.IsWeek" /> @Html.DisplayNameFor(model => model.MenuItem.IsWeek)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="MenuItem.IsAvailable" /> @Html.DisplayNameFor(model => model.MenuItem.IsAvailable)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="MenuItem.CategoryId" class="control-label"></label>
-                <select asp-for="MenuItem.CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
-                <span asp-validation-for="MenuItem.CategoryId" class="text-danger"></span>
-            </div>
-            @* <div class="form-group">
-                <label asp-for="MenuItem.MenuCategoryId" class="control-label"></label>
-                <select asp-for="MenuItem.MenuCategoryId" class="form-control" asp-items="ViewBag.MenuCategoryId"></select>
-                <span asp-validation-for="MenuItem.MenuCategoryId" class="text-danger"></span>
-            </div> *@
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-page="./Index">Back to List</a>
-</div>
+@* <input type="hidden" id="menuItemId" value="@Model.Id" />
+Dropzone.options.myDropzone = {
+    url: `/Admin/edit/menu/item/${id}`,
+    // ... other options ...
+}; *@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+
+        Dropzone.autoDiscover = false;
+
+        var id = @Model.MenuItem.Id;
+        let dropzoneElement = document.getElementById('myDropzone_edit');
+        let formElement = document.getElementById('dropzone_form_edit');
+
+        let myDropzone = new Dropzone(dropzoneElement, {
+            url: `/Admin/edit/menu/item/${id}`,
+            //method: 'put',
+            paramName: 'editImageName',
+            acceptedFiles: 'image/*',
+            maxFilesize: 2,
+            dictDefaultMessage: 'Drag an image or click to upload',
+            autoProcessQueue: false,
+            init: function () {
+                this.on("addedfile", function (file) {
+                    // Remove the server-side image
+                    let existingPreview = document.querySelector('.dz-preview.dz-file-preview-edit');
+                    if (existingPreview) {
+                        existingPreview.style.display = 'none';
+                    }
+                    // Ensuring only one file is loaded
+                    if (this.files.length > 1) {
+                        this.removeFile(this.files[0]);
+                    }
+                });
+                this.on('sending', function (file, xhr, formData) {
+                    var formElements = document.querySelectorAll('form .input_for_dropzone_edit');
+                    formElements.forEach(function (element) {
+                        if (element.name) {
+                            console.log(element.name+': '+element.value)
+                            if (element.type === 'checkbox') {
+                                formData.append(element.name, element.checked ? 'true' : 'false');
+                            } else {
+                                formData.append(element.name, element.value,);
+                            }
+                        }
+                    });
+                    let token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+                    formData.append("__RequestVerificationToken", token)
+                });
+                this.on("success", function (file, response) {
+                    if (response.success) {
+                        window.location.href = response.redirectUrl;
+                    } else {
+                        // Handle the case where the server indicates failure
+                        console.error('Failed to process the form on the server.');
+                    }
+                });
+            }
+        });
+
+        //Attach to the form's submit event
+        document.getElementById('dropzone_form_edit').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var sendToServer = Dropzone.forElement("#myDropzone_edit");
+            if (sendToServer.files.length > 0) {
+                sendToServer.processQueue();
+            } else {
+                var formData = new FormData(this);
+                var existingImagePath = document.querySelector('.dz-image img').getAttribute('src');
+                formData.append('MenuItem.Image', existingImagePath || '');
+                console.log(formData);
+                console.log(this.action)
+
+                //Sending the data to the server
+                fetch(`/Admin/edit/menu/item/${id}`, {
+                    method: 'POST',
+                    body: formData,
+                }).then(response => {
+                    if (!response.ok) {
+                        throw new Error('Nework response wasn\'t okay');
+                    }
+                    return response.json();
+                }).then(response => {
+                    window.location.href = response.redirectUrl;
+                })
+            }
+        });
+    </script>
 }

@@ -5,52 +5,76 @@
     ViewData["Title"] = "Create";
     Layout = "~/Pages/Shared/_AdminLayout.cshtml";
 }
+<style>
+    .dropzone .dz-preview {
+        min-width: 200px !important;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 16px;
+        min-height: 200px !important;
+    }
+
+    .dropzone .dz-preview .dz-image {
+        border-radius: 20px;
+        overflow: hidden;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        display: block;
+        z-index: 10;
+    }
+    .dropzone .dz-preview .dz-image img {
+        display: block;
+        width: 100%;
+    }
+</style>
 
 <div class="container-fluid pt-4 px-4">
     <div class="row g-4">
         <div class="col-sm-12">
             <div class="container">
                 <div class="background-secondary container-items h-100 p-4">
-                    <form class="container" enctype="multipart/form-data" method="post">
+                    <form class="container" id="dropzone_form" enctype="multipart/form-data" asp-controller="MenuItem" asp-action="CreateMenuItem">
                         @Html.AntiForgeryToken()
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <div class="form-floating mb-3 w-50">
-                            <input class="form-control" id="floatingInput"
+                            <input class="form-control form_input_for_dropzone" id="floatingMenuName"
                                    asp-for="MenuItem.MenuName" autocomplete="on" aria-required="true" />
-                            <label for="floatingInput" asp-for="MenuItem.MenuName">Menu name</label>
+                            <label for="floatingMenuName" asp-for="MenuItem.MenuName">Menu name</label>
                             <span asp-validation-for="MenuItem.MenuName" class="text-danger"></span>
                         </div>
-                        <div class="form-floating mb-3 w-50">
-                            <input class="form-control" id="floatingNumber"
+                         <div class="form-floating mb-3 w-50">
+                            <input class="form-control form_input_for_dropzone" id="floatingPrice"
                                    asp-for="MenuItem.Price" autocomplete="off" aria-required="true" type="number" min="1" />
-                            <label for="floatingNumber" asp-for="MenuItem.Price">Price</label>
+                            <label for="floatingPrice" asp-for="MenuItem.Price">Price</label>
                             <span asp-validation-for="MenuItem.Price" class="text-danger"></span>
                         </div>
 
                         <div class="form-group">
                             <label asp-for="MenuItem.EndedAt" class="control-label"></label>
-                            <input asp-for="MenuItem.EndedAt" class="form-control" />
+                            <input asp-for="MenuItem.EndedAt" class="form-control form_input_for_dropzone" />
                             <span asp-validation-for="MenuItem.EndedAt" class="text-danger"></span>
                         </div>
 
                         <div class="form-floating mb-3 w-50">
-                            <select asp-for="MenuItem.CategoryId" class="form-select" asp-items="ViewBag.CategoryId">
+                            <select asp-for="MenuItem.CategoryId" class="form-select form_input_for_dropzone" id="floatingCategory" asp-items="ViewBag.CategoryId">
                                 <option value="">Choisir le category</option>
                             </select>
-                            <label asp-for="MenuItem.CategoryId" for="floatingSelect">Category</label>
+                            <label asp-for="MenuItem.CategoryId" for="floatingCategory">Category</label>
                             <span asp-validation-for="MenuItem.CategoryId" class="text-danger"></span>
                         </div>
 
                         <div class="form-floating mb-3 w-50">
-                            <select asp-for="MenuItem.MenuCategoryId" class="form-select" asp-items="ViewBag.MenuCategoryId">
+                            <select asp-for="MenuItem.MenuCategoryId" class="form-select form_input_for_dropzone" id="floatingMenuCategory" asp-items="ViewBag.MenuCategoryId">
                                 <option value="">Choisir le category</option>
                             </select>
-                            <label asp-for="MenuItem.MenuCategoryId" for="floatingSelect">Menu category</label>
+                            <label asp-for="MenuItem.MenuCategoryId" for="floatingMenuCategory">Menu category</label>
                             <span asp-validation-for="MenuItem.MenuCategoryId" class="text-danger"></span>
                         </div>
 
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" asp-for="MenuItem.Ingredient"
+                            <textarea class="form-control form_input_for_dropzone" placeholder="Leave a comment here" asp-for="MenuItem.Ingredient"
                                       id="floatingTextarea" style="height: 150px;"></textarea>
                             <label asp-for="MenuItem.Ingredient" for="floatingTextarea">Ingredient</label>
                             <span asp-validation-for="MenuItem.Ingredient" class="text-danger"></span>
@@ -58,34 +82,38 @@
 
                         <div class="form-group form-check mt-3 pt-2">
                             <label class="form-check-label text-white">
-                                <input class="form-check-input" asp-for="MenuItem.IsWeek" /> Item available for the week?
+                                <input class="form-check-input form_input_for_dropzone" asp-for="MenuItem.IsWeek" /> Item available for the week?
                             </label>
                         </div>
                         <div class="form-group form-check mb-3">
                             <label class="form-check-label text-white">
-                                <input class="form-check-input" asp-for="MenuItem.IsAvailable" /> Item in stock?
+                                <input class="form-check-input form_input_for_dropzone" asp-for="MenuItem.IsAvailable" /> Item in stock?
                             </label>
                         </div>
 
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" asp-for="MenuItem.Description"
-                                      id="floatingTextarea" style="height: 150px;"></textarea>
-                            <label asp-for="MenuItem.Description" for="floatingTextarea">Description</label>
+                            <textarea class="form-control form_input_for_dropzone" placeholder="Leave a comment here" asp-for="MenuItem.Description"
+                                      id="description" style="height: 150px;"></textarea>
+                            <label asp-for="MenuItem.Description" for="description">Description</label>
                             <span asp-validation-for="MenuItem.Description" class="text-danger"></span>
                         </div>
 
-                        <div class="mt-3 w-50">
-                            <label asp-for="MenuItem.ImageFile" for="formFileLg" class="form-label text-secondary">Upload the item photo</label>
-                            <input asp-for="MenuItem.ImageFile" class="form-control form-control-lg bg-dark" aria-required="true" id="formFileLg" type="file">
-                            <span asp-validation-for="MenuItem.ImageFile" class="text-danger"></span>
+                        @* asp-controller="MenuItem" asp-action="CreateMenuItem"  data-target="../../Admin/manage/image"*@
+                        <div class="dropzone mt-3 w-50 bg-dark" id="myDropzone">
+                            <input type="file" name="imageName" value="" hidden />
+                            <div class="dz-message text-white">Drop files here or click to upload.</div>
+
                         </div>
                         <div class="d-flex justify-content-between mt-4">
                             <div>
                                 <a asp-page="Index">Back to List</a>
                             </div>
                             <div class="form-group">
-                                <input type="submit" value="Create" class="btn btn-primary" />
+                                <button type="submit" name="submit" formmethod="post" id="create_menu_item_btn">Submit</button>
                             </div>
+                            @* <div class="form-group">
+                                <input type="submit" value="Create" class="btn btn-primary" />
+                            </div> *@
                         </div>
                     </form>
                 </div>
@@ -97,4 +125,73 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        let dropzoneElement = document.getElementById('myDropzone');
+        let formElement = document.getElementById('dropzone_form');
+
+        // dropzoneElement.getAttribute('data-target')
+
+        Dropzone.options.myDropzone = {
+            url: '/Admin/create/menu/item',
+            paramName: 'imageName',
+            acceptedFiles: 'image/*',
+            maxFilesize: 2, 
+            dictDefaultMessage: 'Drag an image or click to upload',
+            autoProcessQueue: false,
+            init: function () {
+
+
+                this.on('sending', function (file, xhr, formData) {
+
+                    var formElements = document.querySelectorAll('form .form_input_for_dropzone');
+                    formElements.forEach(function (element) {
+                        if (element.name) {
+                            if (element.type === 'checkbox') {
+                                formData.append(element.name, element.checked ? 'true' : 'false');
+                            } else {
+                                formData.append(element.name, element.value,);
+                            }
+                        }
+                    });
+                    let token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+                    formData.append("__RequestVerificationToken", token)
+                });
+                this.on("queuecomplete", function () {
+                    if (this.getUploadingFiles().length === 0 && this.getQueuedFiles().length === 0) {
+                        var form = document.getElementById("dropzone_form");
+                        if (form.requestSubmit) {
+                            form.requestSubmit();
+                        } else {
+                            form.submit();
+                        }
+                    }
+                });
+
+                this.on('success', function (file, response) {
+                    if (response.success) {
+                        window.location.href = response.redirectUrl;
+                    } else {
+                        // Handle the case where the server indicates failure
+                        console.error('Failed to process the form on the server.');
+                    }
+                    let hiddenImageInput = document.querySelector('input[type="hidden"][name="imageName"]');
+                    if (hiddenImageInput && response.imageName) {
+                        hiddenImageInput.value = response.imageName;
+                    }
+                });
+            }
+        };
+
+
+        // Attach to the form's submit event
+        document.getElementById('dropzone_form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var sendToServer = Dropzone.forElement("#myDropzone");
+            if (sendToServer.files.length > 0) {
+                sendToServer.processQueue();
+            } else {
+                this.submit();
+            }
+        });
+    </script>
 }

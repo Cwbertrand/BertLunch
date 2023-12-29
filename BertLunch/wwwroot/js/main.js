@@ -1,32 +1,32 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var header = document.getElementById('sticky-header');
+//document.addEventListener('DOMContentLoaded', function () {
+//    var header = document.getElementById('sticky-header');
 
-    window.addEventListener('scroll', function () {
+//    window.addEventListener('scroll', function () {
 
-    if (window.scrollY > 0) {
-        header.classList.add('sticky');
-    } else if (window.scrollY === 0) {
-        header.classList.remove('sticky');
-    }
-    });
+//    if (window.scrollY > 0) {
+//        header.classList.add('sticky');
+//    } else if (window.scrollY === 0) {
+//        header.classList.remove('sticky');
+//    }
+//    });
 
-    // var widthSize = 
-});
+//    // var widthSize = 
+//});
 
-// Sidebar Toggler
+/* Sidebar Toggler*/
 $('.sidebar-toggler').click(function () {
     $('.sidebar, .content').toggleClass("open");
     return false;
 });
 
-$(document).ready(function () {
-    // $('#datepicker').datepicker({
-    //     format: 'mm/dd/yyyy' // Customize as needed
-    // });
-    $('#timepicker').timepicker({
-        // Timepicker options as needed
-    });
-});
+//$(document).ready(function () {
+//    // $('#datepicker').datepicker({
+//    //     format: 'mm/dd/yyyy' // Customize as needed
+//    // });
+//    $('#timepicker').timepicker({
+//        // Timepicker options as needed
+//    });
+//});
 
 function populateAndShowModal(itemId) {
     fetch(`/detail/item/${itemId}`, { method: 'get' })
@@ -34,7 +34,7 @@ function populateAndShowModal(itemId) {
         .then(data => {
             console.log(data);
             var detailImageDiv = document.querySelector('.detail_image');
-            detailImageDiv.style.backgroundImage = `url('/${data.image}')`;
+            detailImageDiv.style.backgroundImage = `url('${data.image}')`;
             console.log(detailImageDiv.style.backgroundImage);
 
             document.querySelector('#item-name').textContent = data.menuName;

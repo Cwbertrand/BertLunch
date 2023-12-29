@@ -1,4 +1,5 @@
 ﻿@page
+@using BertLunch.Pages.HelperMethods;
 @using Model.DTO;
 @model BertLunch.Pages.Basket.BasketModel
 @{
@@ -7,7 +8,7 @@
 }
 <style>
     body{
-        background: rgba(131,140,144,0.4);
+        background: rgba(131, 140, 144, 0.4);
     }
 </style>
 <section class="container py-5">
@@ -30,7 +31,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-4 to_know">
-                                        <div class="basket_img d-flex">
+                                        <div class="basket_img d-flex" data-bs-toggle="modal" data-bs-target="#detailsItemModal" onclick="populateAndShowModal('@item.ProductId')">
                                             <img src="~/@Url.Content(@item.MenuImage)" alt="@item.MenuName" class="fluid" />
                                         </div>
                                     </div>
@@ -78,27 +79,6 @@
         </div>
         <div class="col-sm-12 col-md-4">
             <div class="row">
-                @* <div class="col-sm-12 basket_items time_section">
-                    <div class="pb-4"></div>
-                    <div>
-                        <h4 class="text-center pb-2">Choisissez votre créneau</h4>
-                        <div class="">
-                            <p class="text-center">21/01/2024</p>
-                        </div>
-                        <div class="px-3 choose_time">
-                            <p class="time mx-2">10:00</p>
-                            <p class="time mx-2">10:30</p>
-                            <p class="time mx-2">11:00</p>
-                            <p class="time mx-2">11:30</p>
-                            <p class="time mx-2">12:00</p>
-                            <p class="time mx-2">12:30</p>
-                            <p class="time mx-2">13:00</p>
-                            <p class="time mx-2">13:30</p>
-                            <p class="time mx-2">14:00</p>
-                            <p class="time mx-2">14:30</p>
-                        </div>
-                    </div>
-                </div> *@
                 <div class="col-sm-12 basket_items time_section">
                     <div class="pb-4"></div>
                     <div>
@@ -143,3 +123,5 @@
     </div>
     </form>
 </section>
+
+<partial name="HelperMethods/_ReusableModal" model="new ReusableModalModel{}" />

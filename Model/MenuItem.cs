@@ -13,8 +13,8 @@ namespace Model
         public float Price { get; set; }
         public string? Image { get; set; }
 
-        [NotMapped]
-        public IFormFile ImageFile { get; set; }
+        //[NotMapped]
+        //public IFormFile ImageFile { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime EndedAt { get; set; }
         public bool IsWeek { get; set; }

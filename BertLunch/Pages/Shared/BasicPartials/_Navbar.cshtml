@@ -23,7 +23,10 @@
                         </div>
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="say_hello">
-                                <a asp-controller="Admin" asp-action="Index">Panneau d'Administrative</a>
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <a asp-controller="Admin" asp-action="Index">Panneau d'Administrative</a>  
+                                }
                                 <div class="dropdown_user">
                                     <i class="fa-regular fa-user user_icon"></i>
                                     <ul>

@@ -55,51 +55,51 @@ namespace BertLunch.Pages.Admin.MenuItem
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
-        public async Task<IActionResult> OnPostAsync()
-        {
-          if (!ModelState.IsValid || _context.MenuItem == null || MenuItem == null)
-            {
-                return Page();
-            }
+        //public async Task<IActionResult> OnPostAsync()
+        //{
+        //  if (!ModelState.IsValid || _context.MenuItem == null || MenuItem == null)
+        //    {
+        //        return Page();
+        //    }
 
-            if (MenuItem.ImageFile != null)
-            {
-                // Creating a unique name for the image while including the image extension
-                string uniqueFileName = Guid.NewGuid().ToString() + "_" + MenuItem.ImageFile.FileName;
+        //    if (MenuItem.ImageFile != null)
+        //    {
+        //        // Creating a unique name for the image while including the image extension
+        //        string uniqueFileName = Guid.NewGuid().ToString() + "_" + MenuItem.ImageFile.FileName;
 
-                // Creating the image path inside wwwroot using _webHostEnvironment
-                string imagePath = Path.Combine(_webHostEnvironment.WebRootPath, "img/menuImages", uniqueFileName);
+        //        // Creating the image path inside wwwroot using _webHostEnvironment
+        //        string imagePath = Path.Combine(_webHostEnvironment.WebRootPath, "img/menuImages", uniqueFileName);
 
-                // This saves the file into the directory
-                using (var stream = new FileStream(imagePath, FileMode.Create))
-                {
-                    // Resizing the image using SixLabors bundle
-                    using (var image = Image.Load(MenuItem.ImageFile.OpenReadStream()))
-                    {
-                        image.Mutate(x => x.Resize(new ResizeOptions()
-                        {
-                            Size = new Size(400, 300),
-                            Mode = ResizeMode.Max
-                        }));
+        //        // This saves the file into the directory
+        //        using (var stream = new FileStream(imagePath, FileMode.Create))
+        //        {
+        //            // Resizing the image using SixLabors bundle
+        //            using (var image = Image.Load(MenuItem.ImageFile.OpenReadStream()))
+        //            {
+        //                image.Mutate(x => x.Resize(new ResizeOptions()
+        //                {
+        //                    Size = new Size(400, 300),
+        //                    Mode = ResizeMode.Max
+        //                }));
 
-                        IImageEncoder encoder = GetEncoder(Path.GetExtension(uniqueFileName));
+        //                IImageEncoder encoder = GetEncoder(Path.GetExtension(uniqueFileName));
 
-                        // saving the resized image to the stream
-                        image.Save(stream, encoder);
-                    }
-                    //await MenuItem.ImageFile.CopyToAsync(stream);
-                }
+        //                // saving the resized image to the stream
+        //                image.Save(stream, encoder);
+        //            }
+        //            //await MenuItem.ImageFile.CopyToAsync(stream);
+        //        }
 
-                // It then allocates it to the Image attribute which is saved in the database
-                MenuItem.Image = "img/menuImages/" + uniqueFileName;
+        //        // It then allocates it to the Image attribute which is saved in the database
+        //        MenuItem.Image = "img/menuImages/" + uniqueFileName;
 
-            }
+        //    }
 
-            MenuItem.CreatedAt = DateTime.UtcNow;
-            _context.MenuItem.Add(MenuItem);
-            await _context.SaveChangesAsync();
+        //    MenuItem.CreatedAt = DateTime.UtcNow;
+        //    //_context.MenuItem.Add(MenuItem);
+        //    //await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
-        }
+        //    return RedirectToPage("./Index");
+        //}
     }
 }
