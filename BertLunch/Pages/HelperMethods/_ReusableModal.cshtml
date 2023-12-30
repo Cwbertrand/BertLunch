@@ -1,0 +1,72 @@
+﻿@page
+@model BertLunch.Pages.HelperMethods.ReusableModalModel
+@{
+    // ViewData["Title"] = "Cart page";
+    //Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<!-- Modal -->
+<div class="modal fade" id="detailsItemModal" tabindex="-1"
+     aria-labelledby="detailsItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal_size modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="modal_close_btn" onclick="closeModal()">
+                        <i class="fa-solid fa-xmark "></i>
+                    </button>
+                </div>
+                <div class="row grid">
+                    <div class="col-sm-12 col-md-5 detail_image"></div>
+                    <div class="col-sm-12 col-md-7">
+                        <div class="container">
+                            <div class="detail_menu_name">
+                                <h3 id="item-name"></h3>
+                                <h4 id="item-price"> €</h4>
+                            </div>
+                            <div class="detail_description">
+                                <p id="item-description"></p>
+                            </div>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            List des ingredients
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body" id="ingredient-list"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="py-3">
+                                        <div class="nutrition_info">
+                                            <p class="text-black"> <span><i class="fa-solid fa-circle-info pe-2"></i></span>Informations nutritives</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">Nutri-score</div>
+                                            <div class="col-6">B</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">Nutri-score</div>
+                                            <div class="col-6">B</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">Nutri-score</div>
+                                            <div class="col-6">B</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex justify-content-center align-items-end">
+                                    <button class="btn detail_button">Ajouter</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

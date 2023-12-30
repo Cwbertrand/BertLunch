@@ -39,15 +39,17 @@ namespace BertLunch.Controllers.Admin
 
 
             // Querying the database to get the id of the various Category and MenuCategoryId
-            menuItem.Category = await _context.Category.FindAsync(menuItem.CategoryId);
+                    menuItem.Category = menuItem.CategoryId != null
+            ? await _context.Category.FindAsync(menuItem.CategoryId)
+            : null;
             menuItem.MenuCategory = await _context.MenuCategories.FindAsync(menuItem.MenuCategoryId);
 
             if (results.IsValid && ModelState.IsValid)
             {
-                TreatingPhoto(menuItem, imageName);
+                //TreatingPhoto(menuItem, imageName);
                 menuItem.CreatedAt = DateTime.UtcNow;
-                menuItem.CategoryId = menuItem.CategoryId;
-                menuItem.MenuCategoryId = menuItem.MenuCategoryId;
+                //menuItem.CategoryId = menuItem.CategoryId;
+                //menuItem.MenuCategoryId = menuItem.MenuCategoryId;
                 _context.Add(menuItem);
 
                 await _context.SaveChangesAsync();
@@ -107,11 +109,11 @@ namespace BertLunch.Controllers.Admin
                     // Resizing the image using SixLabors bundle
                     using (var image = Image.Load(imageName.OpenReadStream()))
                     {
-                        image.Mutate(x => x.Resize(new ResizeOptions()
-                        {
-                            Size = new Size(400, 300),
-                            Mode = ResizeMode.Max
-                        }));
+                        //image.Mutate(x => x.Resize(new ResizeOptions()
+                        //{
+                        //    Size = new Size(400, 300),
+                        //    Mode = ResizeMode.Max
+                        //}));
 
                         IImageEncoder encoder = GetEncoder(Path.GetExtension(uniqueFileName));
 

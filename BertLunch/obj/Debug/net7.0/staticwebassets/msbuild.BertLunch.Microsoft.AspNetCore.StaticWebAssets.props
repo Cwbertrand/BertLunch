@@ -928,12 +928,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menu\menu_item\9.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\burger-poulet-juteux-laitue-fraiche-frites-croustillantes-planche-bois.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\00757399-ce84-43d0-a27d-6f68c2a64243_burger-boeuf-viande-laitue-fromage-tomate-frites-vue-laterale.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BertLunch</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BertLunch</BasePath>
-      <RelativePath>img/menuImages/burger-poulet-juteux-laitue-fraiche-frites-croustillantes-planche-bois.jpg</RelativePath>
+      <RelativePath>img/menuImages/00757399-ce84-43d0-a27d-6f68c2a64243_burger-boeuf-viande-laitue-fromage-tomate-frites-vue-laterale.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -942,14 +942,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\burger-poulet-juteux-laitue-fraiche-frites-croustillantes-planche-bois.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\00757399-ce84-43d0-a27d-6f68c2a64243_burger-boeuf-viande-laitue-fromage-tomate-frites-vue-laterale.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\chicken-burger-bun-laitue-tomate-meaf-cheese-frites-mayonnaise-ketchup-side-view.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\0746914e-22f2-4209-b38c-4764f8794378_burger-boeuf-viande-laitue-fromage-tomate-frites-vue-laterale.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BertLunch</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BertLunch</BasePath>
-      <RelativePath>img/menuImages/chicken-burger-bun-laitue-tomate-meaf-cheese-frites-mayonnaise-ketchup-side-view.jpg</RelativePath>
+      <RelativePath>img/menuImages/0746914e-22f2-4209-b38c-4764f8794378_burger-boeuf-viande-laitue-fromage-tomate-frites-vue-laterale.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -958,14 +958,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\chicken-burger-bun-laitue-tomate-meaf-cheese-frites-mayonnaise-ketchup-side-view.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\0746914e-22f2-4209-b38c-4764f8794378_burger-boeuf-viande-laitue-fromage-tomate-frites-vue-laterale.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\delicious-goulash-ready-dinner.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\170dd904-51c3-4c95-b0e5-c4740f0abc59_burger-poulet-juteux-laitue-fraiche-frites-croustillantes-planche-bois.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BertLunch</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BertLunch</BasePath>
-      <RelativePath>img/menuImages/delicious-goulash-ready-dinner.jpg</RelativePath>
+      <RelativePath>img/menuImages/170dd904-51c3-4c95-b0e5-c4740f0abc59_burger-poulet-juteux-laitue-fraiche-frites-croustillantes-planche-bois.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -974,14 +974,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\delicious-goulash-ready-dinner.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\170dd904-51c3-4c95-b0e5-c4740f0abc59_burger-poulet-juteux-laitue-fraiche-frites-croustillantes-planche-bois.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\2f3575a4-8b15-48ae-b677-1c29abb76212_sandwich-vegetarien-salade-tomates-surface-table-bois.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BertLunch</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BertLunch</BasePath>
-      <RelativePath>img/menuImages/dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg</RelativePath>
+      <RelativePath>img/menuImages/2f3575a4-8b15-48ae-b677-1c29abb76212_sandwich-vegetarien-salade-tomates-surface-table-bois.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -990,14 +990,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\2f3575a4-8b15-48ae-b677-1c29abb76212_sandwich-vegetarien-salade-tomates-surface-table-bois.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\hamburger-sandwich-hamburgers-juteux-tomate-chou-rouge.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\330da6be-aba3-4924-809d-0ee9acd9f29f_gros-sandwich-hamburger-burger-boeuf-juteux-fromage-tomate-oignon-rouge-table-bois.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BertLunch</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BertLunch</BasePath>
-      <RelativePath>img/menuImages/hamburger-sandwich-hamburgers-juteux-tomate-chou-rouge.jpg</RelativePath>
+      <RelativePath>img/menuImages/330da6be-aba3-4924-809d-0ee9acd9f29f_gros-sandwich-hamburger-burger-boeuf-juteux-fromage-tomate-oignon-rouge-table-bois.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -1006,14 +1006,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\hamburger-sandwich-hamburgers-juteux-tomate-chou-rouge.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\330da6be-aba3-4924-809d-0ee9acd9f29f_gros-sandwich-hamburger-burger-boeuf-juteux-fromage-tomate-oignon-rouge-table-bois.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\high-angle-asian-rice-dish-with-meat.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\3a0df39b-6913-4ea8-8bcb-21d5aa2e10e1_vue-rapprochee-delicieux-sandwich-frites-plateau-couleur-sombre-surface-noire.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BertLunch</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BertLunch</BasePath>
-      <RelativePath>img/menuImages/high-angle-asian-rice-dish-with-meat.jpg</RelativePath>
+      <RelativePath>img/menuImages/3a0df39b-6913-4ea8-8bcb-21d5aa2e10e1_vue-rapprochee-delicieux-sandwich-frites-plateau-couleur-sombre-surface-noire.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -1022,14 +1022,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\high-angle-asian-rice-dish-with-meat.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\3a0df39b-6913-4ea8-8bcb-21d5aa2e10e1_vue-rapprochee-delicieux-sandwich-frites-plateau-couleur-sombre-surface-noire.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\vegan-person-holds-up-wooden-coconut-buddha-bowl-full-healthy-greens-vegetables-grains-chopsticks.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\4445c12f-cf88-4239-b95d-a144df35f99d_coup-mise-au-point-selective-cookies-aux-pepites-chocolat-surface-blanche.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BertLunch</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BertLunch</BasePath>
-      <RelativePath>img/menuImages/vegan-person-holds-up-wooden-coconut-buddha-bowl-full-healthy-greens-vegetables-grains-chopsticks.jpg</RelativePath>
+      <RelativePath>img/menuImages/4445c12f-cf88-4239-b95d-a144df35f99d_coup-mise-au-point-selective-cookies-aux-pepites-chocolat-surface-blanche.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -1038,7 +1038,375 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\vegan-person-holds-up-wooden-coconut-buddha-bowl-full-healthy-greens-vegetables-grains-chopsticks.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\4445c12f-cf88-4239-b95d-a144df35f99d_coup-mise-au-point-selective-cookies-aux-pepites-chocolat-surface-blanche.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\47aaa3b1-6ce8-4cea-a191-9c9808fdebfb_tender-juicy-veal-steak-medium-rare-with-french-fries.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/47aaa3b1-6ce8-4cea-a191-9c9808fdebfb_tender-juicy-veal-steak-medium-rare-with-french-fries.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\47aaa3b1-6ce8-4cea-a191-9c9808fdebfb_tender-juicy-veal-steak-medium-rare-with-french-fries.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\4b400868-a81c-4732-9bf1-3964b78839f3_tasty-fresh-poke-bowl-with-avocado-quinoa-vegetables-top-view.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/4b400868-a81c-4732-9bf1-3964b78839f3_tasty-fresh-poke-bowl-with-avocado-quinoa-vegetables-top-view.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\4b400868-a81c-4732-9bf1-3964b78839f3_tasty-fresh-poke-bowl-with-avocado-quinoa-vegetables-top-view.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\56895b2f-538f-4f32-8e76-0cfdb5168080_sandwich-au-pain-tandir-du-fromage-blanc-tomates-laitue-interieur.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/56895b2f-538f-4f32-8e76-0cfdb5168080_sandwich-au-pain-tandir-du-fromage-blanc-tomates-laitue-interieur.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\56895b2f-538f-4f32-8e76-0cfdb5168080_sandwich-au-pain-tandir-du-fromage-blanc-tomates-laitue-interieur.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\5a8e1901-953b-49c4-a11f-364f8cf1d808_burger-poulet-juteux-laitue-fraiche-frites-croustillantes-planche-bois.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/5a8e1901-953b-49c4-a11f-364f8cf1d808_burger-poulet-juteux-laitue-fraiche-frites-croustillantes-planche-bois.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\5a8e1901-953b-49c4-a11f-364f8cf1d808_burger-poulet-juteux-laitue-fraiche-frites-croustillantes-planche-bois.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\6ae19489-207c-4f79-99a1-3349e9f943ae_hamburger-sandwich-hamburgers-juteux-tomate-chou-rouge.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/6ae19489-207c-4f79-99a1-3349e9f943ae_hamburger-sandwich-hamburgers-juteux-tomate-chou-rouge.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\6ae19489-207c-4f79-99a1-3349e9f943ae_hamburger-sandwich-hamburgers-juteux-tomate-chou-rouge.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\8e8ff6a1-c454-4951-8d9c-52537dbb3a93_delicieux-sandwich-vegetalien-table-bois.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/8e8ff6a1-c454-4951-8d9c-52537dbb3a93_delicieux-sandwich-vegetalien-table-bois.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\8e8ff6a1-c454-4951-8d9c-52537dbb3a93_delicieux-sandwich-vegetalien-table-bois.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\9c16b0ae-b9f4-44d7-95d7-94d1c2b7adb6_vue-laterale-sandwich-pain-blanc-viande-grillee-escalope-fromage-laitue-frites-mayo-ketchup-planchejpg.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/9c16b0ae-b9f4-44d7-95d7-94d1c2b7adb6_vue-laterale-sandwich-pain-blanc-viande-grillee-escalope-fromage-laitue-frites-mayo-ketchup-planchejpg.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\9c16b0ae-b9f4-44d7-95d7-94d1c2b7adb6_vue-laterale-sandwich-pain-blanc-viande-grillee-escalope-fromage-laitue-frites-mayo-ketchup-planchejpg.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\9db80f40-8368-4ff6-8347-e69a8c570bb6_mexican-quesadilla-wrap-with-chicken-corn-sweet-pepper-salsa.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/9db80f40-8368-4ff6-8347-e69a8c570bb6_mexican-quesadilla-wrap-with-chicken-corn-sweet-pepper-salsa.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\9db80f40-8368-4ff6-8347-e69a8c570bb6_mexican-quesadilla-wrap-with-chicken-corn-sweet-pepper-salsa.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\a1022175-e635-45b5-a0c3-ec80e05c145a_vue-dessus-delicieux-sandwich-au-ham-interieur-plaque-sombre-frites-du-ketchup-surface-sombre.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/a1022175-e635-45b5-a0c3-ec80e05c145a_vue-dessus-delicieux-sandwich-au-ham-interieur-plaque-sombre-frites-du-ketchup-surface-sombre.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\a1022175-e635-45b5-a0c3-ec80e05c145a_vue-dessus-delicieux-sandwich-au-ham-interieur-plaque-sombre-frites-du-ketchup-surface-sombre.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\af141b36-08ec-49fc-94c2-2b962dc69cf7_burger-vegetarien-web.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/af141b36-08ec-49fc-94c2-2b962dc69cf7_burger-vegetarien-web.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\af141b36-08ec-49fc-94c2-2b962dc69cf7_burger-vegetarien-web.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\b6fa62e0-5eda-4791-8b72-fe7d817aa3ff_freshly-grilled-meat-veggies-plate-generative-ai.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/b6fa62e0-5eda-4791-8b72-fe7d817aa3ff_freshly-grilled-meat-veggies-plate-generative-ai.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\b6fa62e0-5eda-4791-8b72-fe7d817aa3ff_freshly-grilled-meat-veggies-plate-generative-ai.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\c1a1ca70-f8a1-41e2-a59d-58056ee02f3e_vegan-person-holds-up-wooden-coconut-buddha-bowl-full-healthy-greens-vegetables-grains-chopsticks.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/c1a1ca70-f8a1-41e2-a59d-58056ee02f3e_vegan-person-holds-up-wooden-coconut-buddha-bowl-full-healthy-greens-vegetables-grains-chopsticks.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\c1a1ca70-f8a1-41e2-a59d-58056ee02f3e_vegan-person-holds-up-wooden-coconut-buddha-bowl-full-healthy-greens-vegetables-grains-chopsticks.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\c22da328-ab4d-4a41-a642-bda1d640a7f7_delicious-goulash-ready-dinner.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/c22da328-ab4d-4a41-a642-bda1d640a7f7_delicious-goulash-ready-dinner.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\c22da328-ab4d-4a41-a642-bda1d640a7f7_delicious-goulash-ready-dinner.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\c3b0baec-d06d-49ad-af7d-7fcd6e358edc_vue-dessus-sandwichs-triangulaires-assiette-couverts-tranches-concombre.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/c3b0baec-d06d-49ad-af7d-7fcd6e358edc_vue-dessus-sandwichs-triangulaires-assiette-couverts-tranches-concombre.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\c3b0baec-d06d-49ad-af7d-7fcd6e358edc_vue-dessus-sandwichs-triangulaires-assiette-couverts-tranches-concombre.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\c71c9e49-d9c2-4bc1-b349-58e2fe32edf1_chicken-burger-bun-laitue-tomate-meaf-cheese-frites-mayonnaise-ketchup-side-view.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/c71c9e49-d9c2-4bc1-b349-58e2fe32edf1_chicken-burger-bun-laitue-tomate-meaf-cheese-frites-mayonnaise-ketchup-side-view.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\c71c9e49-d9c2-4bc1-b349-58e2fe32edf1_chicken-burger-bun-laitue-tomate-meaf-cheese-frites-mayonnaise-ketchup-side-view.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\cab0d17d-6c18-47e9-828d-c0fcf3cce2a2_sandwich-au-poulet-laitue-fromage-oignon-tomate-pomme-terre-maison-vue-laterale.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/cab0d17d-6c18-47e9-828d-c0fcf3cce2a2_sandwich-au-poulet-laitue-fromage-oignon-tomate-pomme-terre-maison-vue-laterale.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\cab0d17d-6c18-47e9-828d-c0fcf3cce2a2_sandwich-au-poulet-laitue-fromage-oignon-tomate-pomme-terre-maison-vue-laterale.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\d1e65c9b-773c-4894-a25a-ac7582ab8d2a_dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/d1e65c9b-773c-4894-a25a-ac7582ab8d2a_dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\d1e65c9b-773c-4894-a25a-ac7582ab8d2a_dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\dc1181b1-d9a9-44cb-ba83-da8b5b16ef40_vue-face-burger-vegetarien-comptoir-tomates.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/dc1181b1-d9a9-44cb-ba83-da8b5b16ef40_vue-face-burger-vegetarien-comptoir-tomates.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\dc1181b1-d9a9-44cb-ba83-da8b5b16ef40_vue-face-burger-vegetarien-comptoir-tomates.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\de5d9f8c-f00b-4423-8bf6-3d8d7b8d9991_gros-sandwich-brochette-poulet-laitue.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/de5d9f8c-f00b-4423-8bf6-3d8d7b8d9991_gros-sandwich-brochette-poulet-laitue.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\de5d9f8c-f00b-4423-8bf6-3d8d7b8d9991_gros-sandwich-brochette-poulet-laitue.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\e2267dc6-bfda-4212-83ea-364888d94e9c_sandwich-viande-vue-cote-frites-planche-min.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/e2267dc6-bfda-4212-83ea-364888d94e9c_sandwich-viande-vue-cote-frites-planche-min.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\e2267dc6-bfda-4212-83ea-364888d94e9c_sandwich-viande-vue-cote-frites-planche-min.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\f393eb21-fc3c-4192-973d-74d666a5329f_5ccc06e0-b7eb-429c-a891-a53d6bddc204_R.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/f393eb21-fc3c-4192-973d-74d666a5329f_5ccc06e0-b7eb-429c-a891-a53d6bddc204_R.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\f393eb21-fc3c-4192-973d-74d666a5329f_5ccc06e0-b7eb-429c-a891-a53d6bddc204_R.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\f4b54ad7-37b8-437a-b2fd-d9dcc0a1f09a_high-angle-asian-rice-dish-with-meat.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/f4b54ad7-37b8-437a-b2fd-d9dcc0a1f09a_high-angle-asian-rice-dish-with-meat.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\f4b54ad7-37b8-437a-b2fd-d9dcc0a1f09a_high-angle-asian-rice-dish-with-meat.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\f6575502-782e-4d91-9ec0-69ff1bb26809_vue-avant-du-burger-vegetarien-assiette.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BertLunch</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BertLunch</BasePath>
+      <RelativePath>img/menuImages/f6575502-782e-4d91-9ec0-69ff1bb26809_vue-avant-du-burger-vegetarien-assiette.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\menuImages\f6575502-782e-4d91-9ec0-69ff1bb26809_vue-avant-du-burger-vegetarien-assiette.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\person.jpg))">
       <SourceType>Package</SourceType>

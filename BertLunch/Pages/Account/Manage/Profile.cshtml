@@ -1,0 +1,112 @@
+﻿@page
+@using BertLunch.Pages.ProfileView.Account.Manage;
+@using Microsoft.AspNetCore.Identity.UI.V5.Pages.Account.Manage.Internal;
+@model ProfileModel
+@{
+    ViewData["Title"] = "Profile";
+    ViewData["ActivePage"] = ManageNavPages.Index;
+}
+
+<style>
+    body {
+        background: rgba(131,140,144,0.4);
+    }
+</style>
+
+<main class="container-fluid">
+    <div class="row account">
+        <div class="col-md-3">
+            <partial name="_ManageNav" />
+        </div>
+        <section class="col-9 ">
+            <div class="container pt-4">
+                <h4 class="basket_page">Personal Data</h4>
+            </div>
+            <div class="container">
+                <div class="col row">
+                    <div class="icon_user col-md-3">
+                        <i class="fa-solid fa-envelope fs-1"></i>
+                    </div>
+
+                    <div class="user_info col-md-5">
+                        <div class="d-flex justify-content-between">
+                            <p><strong>Email</strong></p>
+                            <p>@Model.BertUser.Email</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p><strong>Name</strong></p>
+                            <p>@Model.BertUser.Psuedo</p>
+                        </div>
+                    </div>
+                    <div class="modify col-md-4">
+                        <div class="text-end">
+                            <button type="button" class="profile_modify" data-bs-toggle="modal" data-bs-target="#editEmail">
+                                Modify
+                            </button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="editEmail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Change email address</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-black">
+                                            Current email address: <br>
+                                            <strong>@Model.BertUser.Email</strong>
+                                        </p>
+                                        {{form(form)}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="col row">
+                    <div class="icon_user col-md-3">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="user_info col-md-5">
+                        <div class="nom">
+                            <p><strong>Password</strong></p>
+                            <p>************</p>
+                        </div>
+                    </div>
+                    <div class="modify col-md-4">
+                        <a href="{{ path('app_forgot_password_request') }}" class="profile_modify">Modify</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="col delete_btn_div">
+                    <button type="button" class="delete_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Delete Account
+                    </button>
+                </div>
+
+
+                <!-- Modal -->
+                @* <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Delete account</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure you wish to delete this account?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn w-25 btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <a href="{{path('delete_user')}}" class="btn w-25 btn-danger">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> *@
+                <hr>
+            </div>
+        </section>
+    </div>
+</main>

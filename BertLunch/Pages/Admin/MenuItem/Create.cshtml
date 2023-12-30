@@ -57,13 +57,13 @@
                             <span asp-validation-for="MenuItem.EndedAt" class="text-danger"></span>
                         </div>
 
-                        <div class="form-floating mb-3 w-50">
+                        @* <div class="form-floating mb-3 w-50">
                             <select asp-for="MenuItem.CategoryId" class="form-select form_input_for_dropzone" id="floatingCategory" asp-items="ViewBag.CategoryId">
                                 <option value="">Choisir le category</option>
                             </select>
                             <label asp-for="MenuItem.CategoryId" for="floatingCategory">Category</label>
                             <span asp-validation-for="MenuItem.CategoryId" class="text-danger"></span>
-                        </div>
+                        </div> *@
 
                         <div class="form-floating mb-3 w-50">
                             <select asp-for="MenuItem.MenuCategoryId" class="form-select form_input_for_dropzone" id="floatingMenuCategory" asp-items="ViewBag.MenuCategoryId">
