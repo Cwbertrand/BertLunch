@@ -274,3 +274,5 @@ C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net
 C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\Model.pdb
 C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\Microsoft.AspNet.Identity.Core.dll
 C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\Stripe.net.dll
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\appsettings-clone.Development.json
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\appsettings-clone.json
