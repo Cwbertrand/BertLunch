@@ -11,117 +11,116 @@
         background: rgba(131, 140, 144, 0.4);
     }
 </style>
-<section class="container py-5">
-    <div>
-        <h3 style="color:#223f49ff;">Shopping basket</h3>
-    </div>
-    <form method="post" asp-controller="Order" asp-action="CreateOrder">
-        <div class="row gx-5">
-        <div class="col-sm-12 col-md-8">
-            <div class="row">
-                <div class="col-sm-12 basket_items">
-                    <div class="pb-4"></div>
-                    @if (ViewData["CartItems"] as List<CartItem> != null)
-                    {
-                        @foreach (var item in ViewData["CartItems"] as List<CartItem>)
-                        {
-                            <div class="pb-2 px-3 basket_item_card">
-                                <div class="d-flex justify-content-end">
-                                    <button class="basket_close_item_btn" onclick="deleteFromBasket(event, @item.ProductId)"><i class="fa-solid fa-xmark"></i></button>
+@if ((Model.BasketItems != null && Model.BasketItems.Any()) || Model.BasketItems.Count != 0)
+{
+    <section class="container py-5">
+        <div>
+            <h3 style="color:#223f49ff;">Shopping basket</h3>
+        </div>
+        <form method="post" asp-controller="Order" asp-action="CreateOrder">
+            <div class="row gx-5">
+                <div class="col-sm-12 col-md-8">
+                    <div class="row">
+                        <div class="col-sm-12 basket_items">
+                            <div class="pb-4"></div>
+                            @foreach (var item in Model.BasketItems)
+                            {
+                                <div class="pb-2 px-3 basket_item_card">
+                                    <div class="d-flex justify-content-end">
+                                        <button class="basket_close_item_btn" onclick="deleteFromBasket(event, @item.ProductId)"><i class="fa-solid fa-xmark"></i></button>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4 to_know">
+                                            <div class="basket_img d-flex" data-bs-toggle="modal" data-bs-target="#detailsItemModal" onclick="populateAndShowModal('@item.ProductId')">
+                                                <img src="@Url.Content(@item.MenuImage)" alt="@item.MenuName" class="fluid" />
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 basket_item_info basket_item_centralization">
+                                            <h6>@item.MenuName</h6>
+                                            @* <p>category</p> *@
+                                        </div>
+                                        <div class="col-sm-3 basket_item_centralization align-items-center">
+                                            <div class="add_reduce_btns row d-flex justify-content-between">
+                                                <div class="col-4 btn_col">
+                                                    <button onclick="removeFromBasket(event, @item.ProductId)">
+                                                        @if (item.Quantity == 1)
+                                                        {
+                                                            <i class="text-danger fa-solid fa-trash-can"></i>
+                                                        }
+                                                        else
+                                                        {
+
+                                                            <i class="fa-solid fa-minus"></i>
+                                                        }
+                                                    </button>
+                                                </div>
+                                                <div class="col-4 text-center">
+                                                    <h4 id="quantity_@item.ProductId">@item.Quantity</h4>
+                                                </div>
+                                                <div class="col-4 btn_col">
+                                                    <button onclick="addToBasket(event, @item.ProductId)"><i class="fa-solid fa-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 basket_item_centralization align-items-center">
+                                            <h4>@item.MenuPrice.ToString("N2") €</h4>
+                                        </div>
+                                    </div>
+                                    <div class="container"><hr /></div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="row">
+                        <div class="col-sm-12 basket_items time_section">
+                            <div class="pb-4"></div>
+                            <div>
+                                <h4 class="text-center pb-2">Choisissez votre créneau</h4>
+                                <div class="date_select">
+                                    <input type="hidden" id="selectedDate" name="selectedDate" value="" />
+                                    <p class="text-center"></p>
+                                </div>
+                                <div class="px-3 choose_time" id="timeSlotsContainer">
+                                    <input type="hidden" id="selectedTimeSlot" name="selectedTimeSlot" value="" />
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-sm-12 sub_total_section" style="background-image: url('/img/homepage/texture_wood.png');">
+                            <div class="container pt-3">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-8 total_quantity">
+                                        <p class="text-black">total quantity</p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 total_quantity">
+                                        <p class="text-black text-end" id="cart_quantity"></p>
+                                    </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm-4 to_know">
-                                        <div class="basket_img d-flex" data-bs-toggle="modal" data-bs-target="#detailsItemModal" onclick="populateAndShowModal('@item.ProductId')">
-                                            <img src="@Url.Content(@item.MenuImage)" alt="@item.MenuName" class="fluid" />
-                                        </div>
+                                    <div class="col-sm-12 col-md-8 total_quantity">
+                                        <p class="text-black">total price</p>
                                     </div>
-                                    <div class="col-sm-3 basket_item_info basket_item_centralization">
-                                        <h6>@item.MenuName</h6>
-                                        <p>category</p>
-                                    </div>
-                                    <div class="col-sm-3 basket_item_centralization align-items-center">
-                                        <div class="add_reduce_btns row d-flex justify-content-between">
-                                            <div class="col-4 btn_col">
-                                                <button onclick="removeFromBasket(event, @item.ProductId)">
-                                                    @if (item.Quantity == 1)
-                                                    {
-                                                        <i class="text-danger fa-solid fa-trash-can"></i>
-                                                    }
-                                                    else
-                                                    {
-
-                                                        <i class="fa-solid fa-minus"></i>
-                                                    }
-                                                </button>
-                                            </div>
-                                            <div class="col-4 text-center">
-                                                <h4 id="quantity_@item.ProductId">@item.Quantity</h4>
-                                            </div>
-                                            <div class="col-4 btn_col">
-                                                <button onclick="addToBasket(event, @item.ProductId)"><i class="fa-solid fa-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2 basket_item_centralization align-items-center">
-                                        <h4>@item.MenuPrice €</h4>
+                                    <div class="col-sm-12 col-md-4 total_quantity">
+                                        <p class="text-black text-end" id="cart_total_price"></p>
                                     </div>
                                 </div>
-                                <div class="container"><hr /></div>
+                                <div class="text-center btn_checkout">
+                                    <button type="submit" id="disable_checkout_btn" disabled>Checkout</button>
+                                </div>
                             </div>
-                        }
-                    }
-                    else
-                    {
-                        <p>We're sorry, your basket is empty</p>
-                    }
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <div class="row">
-                <div class="col-sm-12 basket_items time_section">
-                    <div class="pb-4"></div>
-                    <div>
-                        <h4 class="text-center pb-2">Choisissez votre créneau</h4>
-                        <div class="date_select">
-                            <input type="hidden" id="selectedDate" name="selectedDate" value="" />
-                            <p class="text-center"></p>
-                        </div>
-                        <div class="px-3 choose_time" id="timeSlotsContainer">
-                            <input type="hidden" id="selectedTimeSlot" name="selectedTimeSlot" value="" />
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col-sm-12 sub_total_section" style="background-image: url('/img/homepage/texture_wood.png');">
-                    <div class="container pt-3">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-8 total_quantity">
-                                <p class="text-black">total quantity</p>
-                            </div>
-                            <div class="col-sm-12 col-md-4 total_quantity">
-                                <p class="text-black text-end" id="cart_quantity"></p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-8 total_quantity">
-                                <p class="text-black">total price</p>
-                            </div>
-                            <div class="col-sm-12 col-md-4 total_quantity">
-                                <p class="text-black text-end" id="cart_total_price"></p>
-                            </div>
-                        </div>
-                        <div class="text-center btn_checkout">
-                                <button type="submit" id="disable_checkout_btn" disabled>Checkout</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    </form>
-</section>
+        </form>
+    </section>
+}else
+{
+    <partial name="_EmptyBasket" />
+}
 
 <partial name="HelperMethods/_ReusableModal" model="new ReusableModalModel{}" />

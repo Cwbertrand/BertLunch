@@ -6,41 +6,41 @@
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
-
 <section class="hero general_section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.10),rgba(0, 0, 0, 0.6)),url('/img/homepage/home_page.jpg');">
-    <div class="container">
-        <div class="row align-items-center justify-content-center">
+    <div class="container h-100">
+        <div class="row justify-content-center align-items-center" style="height:100%;">
             <div class="col-xl-9 col-md-9 col-md-12">
                 <div class="hero_text text-center">
-                    <h1>
-                        Fresh and Delicious Food
-                        For your Health
-                    </h1>
+                    <h2>Nourrissez votre journée, partagez le moment</h2>
+                    <h6>Des repas délicieux dans un espace où les conversations s'épanouissent et les idées fusent.</h6>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <section class="food_and_about general_section">
-    <div class="py-5">
-        <h2 class="text-center">Our precious meals</h2>
+    <div class="pb-5 pt-3">
+        <h2 class="specials">Nos spéciaux</h2>
         <div class="new_overlay">
             <div class="container">
-                <div class="row envelop_card">
-                    @foreach (var item in Model.MenuItem)
-                    {
-                        <div class="col-sm-6 col-lg-4 p-3 overlay_color">
-                            <div class="menu_item" data-bs-toggle="modal" data-bs-target="#detailsItemModal" onclick="populateAndShowModal('@item.Id')">
-                                <div class="menu_item_overlay">
-                                    <img data-aos="fade-right" data-aos-duration="2000"
-                                         src="@Url.Content(@item.Image)" alt="@item.MenuName" class="card-img-top h-100">
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper envelop_card">
+                        @foreach (var item in Model.MenuItem)
+                        {
+                            <div class="swiper-slide overlay_color">
+                                <div class="menu_item" data-bs-toggle="modal" data-bs-target="#detailsItemModal" onclick="populateAndShowModal('@item.Id')">
+                                    <div class="menu_item_overlay">
+                                        <img data-aos="fade-right" data-aos-duration="2000" src="@Url.Content(@item.Image)" alt="@item.MenuName" class="card-img-top h-100">
+                                    </div>
+                                    <div data-aos="fade-left" class="menu_caption">@item.MenuName</div>
                                 </div>
-                                <div data-aos="fade-left" class="menu_caption">@item.MenuName</div>
                             </div>
-                        </div>
-                    }
-                    
+                        }
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+
                 <div class="separator"></div>
                 <div class="row about_section">
                     <div class="col-xl-7 col-lg-7">
@@ -56,33 +56,81 @@
                     <div class="col-xl-5 col-lg-5">
                         <div class="about_info" data-aos="fade-right" data-aos-duration="700">
                             <div class="pb-3">
-                                <h3>
-                                    We Serve Fresh and <br>
-                                    Delicious Food
-                                </h3>
+                                <h3>Plus qu'un repas - Un centre de communauté</h3>
                             </div>
                             <p>
-                                Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare
-                                dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
-                                sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.
+                                Bienvenue chez BertLunch, où chaque plat est préparé avec soin et où chaque visite est l'occasion de 
+                                se détendre et de nouer des liens. Notre cantine n'est pas seulement un lieu où l'on mange ; c'est un espace 
+                                où les travailleurs se réunissent pour se détendre, partager des histoires et profiter d'un moment à l'écart 
+                                de la vie professionnelle.
                             </p>
                             <a href="#" class="line-button">Learn More...</a>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </section>
 
-<section class="parallax_section" style="background-image: url('/img/homepage/paralex.jpg');"></section>
+<section class="parallax_section" style="background-image: url('/img/homepage/paralex.jpg');">
+    <div class="swiper-container container mt-2">
+        <div class="swiper-wrapper testimonial" data-aos="fade-down" data-aos-duration="2000">
+            <div class="row container pt-4 mb-5">
+                <div class="py-3 text-center">
+                    <h3>Testimonials</h3>
+                    <h5 class="text-white">What our customers have to say about us</h5>
+                </div>
+                <div class="testimonial_swiper">
+                    <div class="swiper-wrapper">
+                        @foreach (var review in Model.Reviews)
+                        {
+                            <div class="single_testmonial swiper-slide">
+                                <div class="author_opinion">
+                                    <p>"@review.Comment"</p>
+                                </div>
+                                <div class="testmonial_author">
+                                    <div class="name">
+                                        <h3>@review.User.Psuedo</h3>
+                                        <div class="icon">
+                                            @for (int i = 1; i <= 5; i++)
+                                            {
+                                                if (@review.Rating >= i)
+                                                {
+                                                    <i class="fa fa-star text-success"></i>
+                                                }
+                                                else
+                                                {
+                                                    <i class="fa fa-star"></i>
+                                                }
+                                            }
+                                        </div>
+                                        @* <div class="icon">
+                                            <a href="#"><i class="fa fa-star"></i> </a>
+                                            <a href="#"><i class="fa fa-star"></i> </a>
+                                            <a href="#"><i class="fa fa-star"></i> </a>
+                                            <a href="#"><i class="fa fa-star"></i> </a>
+                                            <a href="#"><i class="fa fa-star"></i> </a>
+                                        </div> *@
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="gallery_section" style="background-image: url('/img/homepage/texture_wood.jpg');">
     <div class="container h-100">
         <div class="row">
             <div class="col-12">
                 <div class="wow fadeIn pt-5 mt-3" data-wow-duration="1s" data-wow-delay="0.1s" data-aos="fade-down" data-aos-duration="2000">
                     <h2 class="block-title text-center">
-                        Our Gallery
+                        Notre galerie
                     </h2>
                     <p class="title-caption text-center text-dark">There are many variations of passages of Lorem Ipsum available </p>
                 </div>
@@ -295,10 +343,66 @@
 
 <partial name="HelperMethods/_ReusableModal" model="new ReusableModalModel{}" />
 @section Scripts {
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         AOS.init();
+        // gsap.fromTo(".hero",
+        //     { backgroundSize: "100%" },
+        //     { backgroundSize: "110%", duration: 10, ease: "none", repeat: -1, yoyo: true }
+        // );
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+            },
+        });
+        var swiper = new Swiper(".testimonial_swiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+            },
+        });
+
     </script>
 }
 
 
 
+@*<div class="row envelop_card">
+                @foreach (var item in Model.MenuItem)
+                    {
+                        <div class="col-lg-4 p-3 overlay_color">
+                            <div class="menu_item" data-bs-toggle="modal" data-bs-target="#detailsItemModal" onclick="populateAndShowModal('@item.Id')">
+                                <div class="menu_item_overlay">
+                                    <img data-aos="fade-right" data-aos-duration="2000"
+                                         src="@Url.Content(@item.Image)" alt="@item.MenuName" class="card-img-top h-100">
+                                </div>
+                                <div data-aos="fade-left" class="menu_caption">@item.MenuName</div>
+                            </div>
+                        </div>
+                    }
+                </div>*@

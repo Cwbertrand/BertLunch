@@ -10,5 +10,6 @@ namespace Model;
 public class AppUser : IdentityUser
 {
     public string? Psuedo { get; set; }
+    public ICollection<Review> UserReviews { get; set; }
 }
 

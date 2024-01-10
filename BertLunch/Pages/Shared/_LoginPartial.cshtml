@@ -5,17 +5,7 @@
 @inject UserManager<AppUser> UserManager
 
 <style>
-    button#logout {
-        text-align: end;
-        width: 100%;
-        color: #fff !important;
-    }
-
-    button#logout:hover,
-    a#manage:hover {
-        background: #fb8500;
-        transition: ease .3s;
-    }
+    
 </style>
 
 @if (SignInManager.IsSignedIn(User))

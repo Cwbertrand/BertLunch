@@ -8,6 +8,7 @@
     ViewData["Title"] = "payment page";
     Layout = "~/Pages/Shared/_Layout.cshtml";
     var publishableKey = Configuration["Stripe:PublishKey"];
+    var commandNumber = ViewData["CommandNumber"] as string;
 }
 
 <section class="container py-5">
@@ -50,6 +51,7 @@
                                             
                                         </div>
                                         <input type="hidden" id="stripeToken" name="stripeToken" value="">
+                                        <input type="hidden" id="commandNumber" name="commandNumber" value="@commandNumber" />
                                         <div id="card-errors" style="color:red;" role="alert"></div>
                                         <button type="submit" class="pay_button">Submit Payment</button>
                                     </form>
@@ -74,9 +76,12 @@
                                         Please pay the cashier upon picking up your order. 
                                         Ensure you receive a payment receipt for your records.
                                     </div>
-                                    <button type="button" class="pay_button mt-2" onclick="confirmCashPayment()">
-                                        Confirm Order
-                                    </button>
+                                    <form asp-controller="Payment" id="cashPay" asp-action="CashPayment" method="post">
+                                        <input type="hidden" id="commandNumberCash" name="commandNumberCash" value="">
+                                        <button type="submit" class="pay_button mt-2" onclick="cashPayment();">
+                                            Confirm Order
+                                        </button>
+                                    </form>
 
                                 </div>
                             </div>
@@ -153,7 +158,7 @@
             var style = {
                 base: {
                     ':focus': {
-                        color: '#223f49ff', // Text color on focus
+                        color: '#223f49ff',
                     },
                 }
             };
@@ -204,11 +209,24 @@
                         console.log(errorElement);
                     } else {
                         document.getElementById('stripeToken').value = result.token.id;
+
+                        // Setting a value
+                        var urlParams = new URLSearchParams(window.location.search);
+                        var commandNumber = urlParams.get('command');
+                        document.getElementById('commandNumber').value = commandNumber;
                         document.getElementById('payment-form').submit();
                     }
                 })
             })
         });
+
+        function cashPayment() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var commandNumber = urlParams.get('command');
+            console.log(commandNumber)
+            document.getElementById('commandNumberCash').value = commandNumber;
+            document.getElementById('cashPay').submit();
+        }
     </script>
 }
 

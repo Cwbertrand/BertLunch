@@ -1,11 +1,14 @@
 ﻿using BertLunch.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Model;
 using Model.Data;
 using Stripe;
 
 namespace BertLunch.Controllers
 {
+    [Authorize]
     [Route("payment")]
     public class PaymentController : Controller
     {
@@ -21,6 +24,8 @@ namespace BertLunch.Controllers
         [HttpPost("stripe_payment")]
         public async Task<IActionResult> StripePayment(string stripeToken)
         {
+            var commandNumber = Request.Form["commandNumber"].ToString();
+            var updatePaymentStatus = await _context.Reservations.FirstOrDefaultAsync(r => r.CommandNumber == commandNumber);
 
             try
             {
@@ -66,21 +71,20 @@ namespace BertLunch.Controllers
                 };
 
                 var charge = await charges.CreateAsync(chargeOptions);
-                if (charge.Status == "succeeded")
-                {
-                    // Payment was successful
-                    Response.Cookies.Delete("cartItems");
-                    return Redirect("~/PaymentPage/PaymentSuccessful");
-                }
-                else
-                {
-                    // Payment failed
-                    return Redirect("~/PaymentPage/PaymentFailure"); 
-                }
+
+                // Payment was successful
+                Response.Cookies.Delete("cartItems");
+                updatePaymentStatus.PaymentStatus = PaymentStatus.PaidByCard;
+                await _context.SaveChangesAsync();
+
+                return Redirect("~/PaymentPage/PaymentSuccessful");
+                
             }
             catch (StripeException ex)
             {
                 // decline payment: 4000 0000 0000 0002
+                updatePaymentStatus.PaymentStatus = PaymentStatus.PaymentFailed;
+                await _context.SaveChangesAsync();
                 return Redirect("~/PaymentPage/PaymentFailure");
                 //switch (ex.StripeError.Type)
                 //{
@@ -95,6 +99,19 @@ namespace BertLunch.Controllers
                 //        return Redirect("~/PaymentPage/PaymentFailure");
                 //}
             }
+        }
+
+        [HttpPost("cash_payment")]
+        public async Task<IActionResult> CashPayment()
+        {
+            var commandNumber = Request.Form["commandNumberCash"].ToString();
+            var updatePaymentStatus = await _context.Reservations.FirstOrDefaultAsync(r => r.CommandNumber == commandNumber);
+
+            Response.Cookies.Delete("cartItems");
+            updatePaymentStatus.PaymentStatus = PaymentStatus.PaidByCash;
+            await _context.SaveChangesAsync();
+
+            return Redirect("~/PaymentPage/PaymentSuccessful");
         }
     }
 }

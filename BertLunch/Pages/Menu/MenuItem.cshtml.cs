@@ -28,9 +28,11 @@ namespace BertLunch.Pages.Menu
                 CategoryId = 3;
             };
 
+            // Delay the query to know which Category to use
             IQueryable<MenuItem> query = _context.MenuItem
                 .Include(x => x.Category)
-                .Include(x => x.MenuCategory);
+                .Include(x => x.MenuCategory)
+                .Where(x => x.IsAvailable && x.IsWeek);
 
             if (CategoryId.HasValue)
             {
