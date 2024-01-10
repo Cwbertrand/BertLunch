@@ -381,10 +381,6 @@
       "PackagePath": "staticwebassets\\js\\basket.js"
     },
     {
-      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\js\\basketssss.js",
-      "PackagePath": "staticwebassets\\js\\basketssss.js"
-    },
-    {
       "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },

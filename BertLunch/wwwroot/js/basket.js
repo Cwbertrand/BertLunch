@@ -2,6 +2,7 @@
     fetch('/basket/product_summary', { method: 'get' })
         .then(response => response.json())
         .then(data => {
+            //console.log(data)
             data.totalQuantity == 0 ? '' : document.getElementById("cart_quantity").textContent = data.totalQuantity;
             document.getElementById("cart_total_price").textContent = `${data.totalPrice.toFixed(2)} \u20AC`;
         })
@@ -34,6 +35,20 @@ function addToBasket(event, Id) {
         .then(data => {
             updateUI();
             updateInputUI(data);
+
+            data.forEach(item => {
+                const itemId = `item_${Id}`;
+                const minusElement = document.querySelector(`#${itemId} .minus_block`);
+                const trashElement = document.querySelector(`#${itemId} .trash_block`);
+
+                if (item.quantity >= 2) {
+                    minusElement.classList.add('display_icon');
+                    trashElement.classList.add('dont_display_icon');
+                } else {
+                    trashElement.classList.add('dont_display_icon');
+                    minusElement.classList.add('display_icon');
+                }
+            });
         })
         .catch(error => {
             console.error('Error adding item to basket:', error);
@@ -50,8 +65,20 @@ function removeFromBasket(event, Id) {
             return response.json();
         })
         .then(data => {
-            updateUI();
-            updateInputUI(data);
+            // Get the specific item you're clicking on
+            const item = data.find(i => i.productId == Id);
+
+            //Select the Id of the item
+            const deleteItem = document.querySelector(`#delete_item_${Id}`);
+            if (item && item.quantity) {
+                
+                updateUI();
+                updateInputUI(data);
+                
+            } else {
+                deleteItem.style.display = 'none';
+                updateUI();
+            }
         })
         .catch(error => {
             console.error('Error removing item from basket:', error);
@@ -69,9 +96,11 @@ function deleteFromBasket(event, Id) {
             return response.json();
         })
         .then(data => {
-            console.log(data);
-            // Now you should update the UI based on the new cart data
-            //updateUI(data);
+            const deleteItem = document.querySelector(`#delete_item_${Id}`);
+            if (deleteItem) {
+                deleteItem.style.display = 'none';
+                updateUI(data);
+            }
         })
         .catch(error => {
             console.error('Error removing item from basket:', error);
@@ -82,6 +111,18 @@ document.addEventListener('DOMContentLoaded', function () {
     updateUI()
 });
 
+
+
+
+
+
+
+
+
+
+
+
+// Time selection functionality
 document.addEventListener('DOMContentLoaded', function () {
     var dateContainer = document.querySelector('.date_select p')
     var selectedDateInput = document.getElementById('selectedDate');
