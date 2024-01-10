@@ -10,8 +10,23 @@
 //    }
 //    });
 
-//    // var widthSize = 
+//    // var widthSize =
 //});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var showNavButton = document.getElementById('show_nav');
+    var closeNavButton = document.getElementById('close_nav');
+    var navbarCollapse = document.getElementById('nav_items');
+
+    showNavButton.addEventListener('click', function () {
+        navbarCollapse.classList.add('show');
+    });
+
+    closeNavButton.addEventListener('click', function () {
+        navbarCollapse.classList.remove('show');
+    });
+});
+
 
 /* Sidebar Toggler*/
 $('.sidebar-toggler').click(function () {
@@ -19,14 +34,6 @@ $('.sidebar-toggler').click(function () {
     return false;
 });
 
-//$(document).ready(function () {
-//    // $('#datepicker').datepicker({
-//    //     format: 'mm/dd/yyyy' // Customize as needed
-//    // });
-//    $('#timepicker').timepicker({
-//        // Timepicker options as needed
-//    });
-//});
 
 function populateAndShowModal(itemId) {
     fetch(`/detail/item/${itemId}`, { method: 'get' })

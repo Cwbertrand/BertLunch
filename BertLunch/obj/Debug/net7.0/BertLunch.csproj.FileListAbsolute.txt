@@ -276,3 +276,15 @@ C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net
 C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\Stripe.net.dll
 C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\appsettings-clone.Development.json
 C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\appsettings-clone.json
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\HarfBuzzSharp.dll
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\QuestPDF.dll
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\SkiaSharp.dll
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\SkiaSharp.HarfBuzz.dll
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\laragon\www\Projet fin annee\project aspnet\BertLunch\BertLunch\bin\Debug\net7.0\runtimes\win-x86\native\libSkiaSharp.dll

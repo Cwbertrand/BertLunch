@@ -1,4 +1,4 @@
-﻿<header>
+﻿@* <header>
     <div class="header-area">
         <div id="sticky-header" class="main-header-area">
             <div class="container-fluid">
@@ -9,19 +9,20 @@
                                 <a href="/">
                                     <img src="~/img/Logos/transparent background/All_white.png" alt="logo">
                                 </a>
+                                <div class="mobile_menu d-block d-lg-none" id="show_nav"><i class="fa-solid fa-bars"></i></div>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-7">
-                            <div class="main-menu d-none d-lg-block">
+                            <div class="main-menu">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="/Menu/MenuItem">Menu pour la semaine</a></li> @* asp-page="./Menu/MenuItem" *@
+                                        <li><a href="/Menu/MenuItem">Menu pour la semaine</a></li> @* asp-page="./Menu/MenuItem" 
                                         <li><a asp-area="" asp-page="/Privacy">Privacy</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                        <div class="col-xl-3 col-lg-3">
                             <div class="say_hello">
                                 @if (User.IsInRole("Admin"))
                                 {
@@ -34,17 +35,15 @@
                                     </ul>
                                 </div>
                                 <ul>
-                                    <li>
+                                    <li class="basket_center" style="position:relative;">
                                         <a href="/Basket/Basket" class="cart_number" id="basket_info">
-                                            <i class="fa-solid fa-cart-shopping cart_icon"></i>
-                                            <span class="cart_data" id="cart_quantity">0</span>
+                                            <i class="fa-solid fa-cart-shopping cart_icon">
+                                                <span class="cart_data" id="cart_quantity"></span>
+                                            </i>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"><i class="fa-solid fa-bars"></i></div>
                         </div>
                     </div>
                 </div>
@@ -52,4 +51,54 @@
             </div>
         </div>
     </div>
-</header>
+</header> *@
+
+
+<nav class="navbar navbar-expand-lg header-area">
+    <div class="container_nav">
+        <div class="logo">
+            <a href="/">
+                <img class="fluid" src="~/img/Logos/transparent background/All_white.png" alt="logo">
+            </a>
+        </div>
+
+
+        <div class="nav_collapse_properties">
+            
+            <div class="nav_items" id="nav_items">
+                <button type="button" class="close d-sm-none" aria-label="Close" id="close_nav">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <ul class="navbar-nav ul_nav_items mb-2 mb-lg-0">
+                    <li><a href="/Menu/MenuItem">Menu pour la semaine</a></li> @* asp-page="./Menu/MenuItem" *@
+                    <li><a asp-area="" asp-page="/Privacy">Privacy</a></li>
+                </ul> 
+            </div>
+            <div class="say_hello d-flex">
+                @if (User.IsInRole("Admin"))
+                {
+                    <a asp-controller="Admin" asp-action="Index">Panneau d'Administrative</a>
+                }
+                <div class="dropdown_user">
+                    <i class="fa-regular fa-user user_icon"></i>
+                    <ul>
+                        <partial name="./_LoginPartial" />
+                    </ul>
+                </div>
+                <ul>
+                    <li class="basket_center" style="position:relative;">
+                        <a href="/Basket/Basket" class="cart_number" id="basket_info">
+                            <i class="fa-solid fa-cart-shopping cart_icon">
+                                <span class="cart_data" id="cart_quantity"></span>
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mobile_menu d-block d-lg-none" id="show_nav">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -21,10 +21,6 @@
       "PackagePath": "staticwebassets\\css\\AdminStyles\\minwidth992px.css"
     },
     {
-      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\bootstrap-datetimepicker.min.css",
-      "PackagePath": "staticwebassets\\css\\bootstrap-datetimepicker.min.css"
-    },
-    {
       "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
@@ -33,8 +29,8 @@
       "PackagePath": "staticwebassets\\css\\flaticon.css"
     },
     {
-      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\maxWidth767px.css",
-      "PackagePath": "staticwebassets\\css\\maxWidth767px.css"
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\maxWidth390px.css",
+      "PackagePath": "staticwebassets\\css\\maxWidth390px.css"
     },
     {
       "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\site.css",
@@ -43,6 +39,10 @@
     {
       "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\widthBetween3391And767px.css",
+      "PackagePath": "staticwebassets\\css\\widthBetween3391And767px.css"
     },
     {
       "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\css\\widthBetween768And991px.css",
@@ -59,6 +59,10 @@
     {
       "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\Logos\\transparent background\\All_white.png",
       "PackagePath": "staticwebassets\\img\\Logos\\transparent background\\All_white.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\Logos\\transparent background\\logo.png",
+      "PackagePath": "staticwebassets\\img\\Logos\\transparent background\\logo.png"
     },
     {
       "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\about\\1.png",
@@ -145,6 +149,14 @@
       "PackagePath": "staticwebassets\\img\\homepage\\home_page.jpg"
     },
     {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\login.jpg",
+      "PackagePath": "staticwebassets\\img\\homepage\\login.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\login1.jpg",
+      "PackagePath": "staticwebassets\\img\\homepage\\login1.jpg"
+    },
+    {
       "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\menu\\Veg-Biryani.jpg",
       "PackagePath": "staticwebassets\\img\\homepage\\menu\\Veg-Biryani.jpg"
     },
@@ -179,6 +191,14 @@
     {
       "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\homepage\\white_wall.jpg",
       "PackagePath": "staticwebassets\\img\\homepage\\white_wall.jpg"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\icon\\facebook.png",
+      "PackagePath": "staticwebassets\\img\\icon\\facebook.png"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\icon\\google.png",
+      "PackagePath": "staticwebassets\\img\\icon\\google.png"
     },
     {
       "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\img\\menuImages\\00757399-ce84-43d0-a27d-6f68c2a64243_burger-boeuf-viande-laitue-fromage-tomate-frites-vue-laterale.jpg",
@@ -1051,6 +1071,346 @@
     {
       "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\fonts\\tt_rounds_neue\\TypeType Trial License.pdf",
       "PackagePath": "staticwebassets\\lib\\fonts\\tt_rounds_neue\\TypeType Trial License.pdf"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\.DS_Store",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\.DS_Store"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\docs-link.html",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\docs-link.html"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\.DS_Store",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\.DS_Store"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\CSSPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\CSSPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\CSSRulePlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\CSSRulePlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\CustomEase.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\CustomEase.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\Draggable.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\Draggable.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\EasePack.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\EasePack.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\EaselPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\EaselPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\Flip.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\Flip.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\MotionPathPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\MotionPathPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\Observer.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\Observer.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\PixiPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\PixiPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\ScrollToPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\ScrollToPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\ScrollTrigger.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\ScrollTrigger.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\TextPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\TextPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\all.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\all.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\gsap-core.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\gsap-core.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\index.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\index.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\utils\\matrix.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\utils\\matrix.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\utils\\paths.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\utils\\paths.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\esm\\utils\\strings.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\esm\\utils\\strings.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\getting-started-link.html",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\getting-started-link.html"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\.DS_Store",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\.DS_Store"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\CSSRulePlugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\CSSRulePlugin.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\CSSRulePlugin.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\CSSRulePlugin.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\CustomEase.min.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\CustomEase.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\CustomEase.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\CustomEase.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\Draggable.min.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\Draggable.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\Draggable.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\Draggable.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\EasePack.min.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\EasePack.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\EasePack.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\EasePack.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\EaselPlugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\EaselPlugin.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\EaselPlugin.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\EaselPlugin.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\Flip.min.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\Flip.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\Flip.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\Flip.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\MotionPathPlugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\MotionPathPlugin.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\MotionPathPlugin.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\MotionPathPlugin.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\Observer.min.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\Observer.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\Observer.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\Observer.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\PixiPlugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\PixiPlugin.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\PixiPlugin.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\PixiPlugin.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\ScrollToPlugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\ScrollToPlugin.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\ScrollToPlugin.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\ScrollToPlugin.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\ScrollTrigger.min.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\ScrollTrigger.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\ScrollTrigger.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\ScrollTrigger.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\TextPlugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\TextPlugin.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\TextPlugin.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\TextPlugin.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\gsap.min.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\gsap.min.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\minified\\gsap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\minified\\gsap.min.js.map"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\.DS_Store",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\.DS_Store"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\CSSPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\CSSPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\CSSRulePlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\CSSRulePlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\CustomEase.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\CustomEase.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\Draggable.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\Draggable.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\EasePack.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\EasePack.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\EaselPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\EaselPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\Flip.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\Flip.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\MotionPathPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\MotionPathPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\Observer.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\Observer.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\PixiPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\PixiPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\ScrollToPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\ScrollToPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\ScrollTrigger.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\ScrollTrigger.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\TextPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\TextPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\all.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\all.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\gsap-core.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\gsap-core.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\index.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\index.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\utils\\matrix.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\utils\\matrix.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\utils\\paths.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\utils\\paths.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\src\\utils\\strings.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\src\\utils\\strings.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\.DS_Store",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\.DS_Store"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\CSSRulePlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\CSSRulePlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\CustomEase.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\CustomEase.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\Draggable.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\Draggable.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\EasePack.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\EasePack.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\EaselPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\EaselPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\Flip.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\Flip.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\MotionPathPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\MotionPathPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\Observer.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\Observer.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\PixiPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\PixiPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\ScrollToPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\ScrollToPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\ScrollTrigger.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\ScrollTrigger.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\TextPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\TextPlugin.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\all.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\all.js"
+    },
+    {
+      "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\gsap-public\\umd\\gsap.js",
+      "PackagePath": "staticwebassets\\lib\\gsap-public\\umd\\gsap.js"
     },
     {
       "Id": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\lib\\jquery-1.12.4.min.js",

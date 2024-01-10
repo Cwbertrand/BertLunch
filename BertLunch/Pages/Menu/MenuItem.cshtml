@@ -47,7 +47,7 @@
 <!-- Delicious area start  -->
 <div class="Delicious_area">
     <div class="tablist_menu">
-        <div class="row">
+        <div class="row menu_main_header_area" id="menu_list_sticky_header">
             <div class="col-xl-12">
                 <ul class="nav justify-content-center" id="pills-tab" role="tablist">
                     <li class="nav-item">
@@ -72,7 +72,6 @@
                             </div>
                         </a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link @(Model.CategoryId == 4 ? "active" : "")"
                            id="pills-sandwich-tab" data-bs-toggle="pill"
@@ -83,20 +82,6 @@
                             </div>
                         </a>
                     </li>
-                    @* <li class="nav-item">
-                        <a class="nav-link" id="pills-dessert-tab" data-bs-toggle="pill" href="#pills-dessert" role="tab" aria-bs-controls="pills-dessert" aria-bs-selected="false">
-                            <div class="single_menu text-center">
-                                <h4>Desserts</h4>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-drink-tab" data-bs-toggle="pill" href="#pills-drink" role="tab" aria-bs-controls="pills-drink" aria-bs-selected="false">
-                            <div class="single_menu text-center">
-                                <h4>Les Boissons</h4>
-                            </div>
-                        </a>
-                    </li> *@
                 </ul>
             </div>
         </div>
@@ -120,11 +105,21 @@
                                         <div class="pb-3 pt-4 px-4">
                                             <h5 class="font-weight-bold">@item.MenuName</h5>
                                             <p class="card-text">@TruncateWords(@item.Ingredient, 6)</p>
-                                            <p>@item.Price €</p>
+                                            <p class="price_menuitem">@item.Price.ToString("N2") €</p>
                                         </div>
                                     </div>
+                                    
                                     <div class="d-flex justify-content-center mb-3">
-                                        <button class="btn basket_button" onclick="addToBasket(event, @item.Id);">Add to basket</button>
+
+                                        <div class="emoji-feedback">
+                                            <span>🎉</span>
+                                            <span>👍</span>
+                                            <span>😊</span>
+                                            <span>👍</span>
+                                            <span style="color:green;">added</span>
+                                        </div>
+
+                                        <button class="btn basket_button" onclick="addToBasket(event, @item.Id); animateEmoji(this);">Add to basket</button>
                                     </div>
                                 </div>
                             </div>
@@ -144,17 +139,27 @@
                     @foreach (var item in group)
                     {
                         <div class="col-sm-6 col-md-4">
-                            <div class="card w-100 h-100 rounded-3 menu_item_page" 
-                                data-bs-toggle="modal" data-bs-target="#detailsItemModal" onclick="populateAndShowModal('@item.Id')"
-                             >
-                                <img src="@Url.Content(@item.Image)" alt="@item.MenuName" class="card-img-top">
-                                <div class="card-body card_info">
-                                    <h5 class="font-weight-bold">@item.MenuName</h5>
-                                    <p class="card-text">@TruncateWords(@item.Ingredient, 6)</p>
-                                    <p>@item.Price €</p>
-                                    <div class="d-flex justify-content-center">
-                                        <button class="btn basket_button" onclick="addToBasket(event, @item.Id)">Add to basket</button>
+                            <div class="card w-100 h-100 rounded-3 menu_item_page card_info">
+                                <div data-bs-toggle="modal" data-bs-target="#detailsItemModal" onclick="populateAndShowModal('@item.Id')">
+                                    <img src="@Url.Content(@item.Image)" alt="@item.MenuName" class="card-img-top">
+                                    <div class="pb-3 pt-4 px-4">
+                                        <h5 class="font-weight-bold">@item.MenuName</h5>
+                                        <p class="card-text">@TruncateWords(@item.Ingredient, 6)</p>
+                                        <p class="price_menuitem">@item.Price.ToString("N2") €</p>
                                     </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center mb-3">
+
+                                    <div class="emoji-feedback">
+                                        <span>🎉</span>
+                                        <span>👍</span>
+                                        <span>😊</span>
+                                        <span>👍</span>
+                                        <span style="color:green;">added</span>
+                                    </div>
+
+                                    <button class="btn basket_button" onclick="addToBasket(event, @item.Id); animateEmoji(this);">Add to basket</button>
                                 </div>
                             </div>
                         </div>
@@ -174,16 +179,25 @@
                         @foreach (var item in group)
                         {
                             <div class="col-sm-6 col-md-4">
-                                <div class="card w-100 h-100 rounded-3 menu_item_page"
-                                     data-bs-toggle="modal" data-bs-target="#detailsItemModal" onclick="populateAndShowModal('@item.Id')">
-                                    <img src="@Url.Content(@item.Image)" alt="@item.MenuName" class="card-img-top">
-                                    <div class="card-body card_info">
-                                        <h5 class="font-weight-bold">@item.MenuName</h5>
-                                        <p class="card-text">@TruncateWords(@item.Ingredient, 6)</p>
-                                        <p>@item.Price €</p>
-                                        <div class="d-flex justify-content-center">
-                                            <button class="btn basket_button" onclick="addToBasket(event, @item.Id)">Add to basket</button>
+                                <div class="card w-100 h-100 rounded-3 menu_item_page card_info">
+                                    <div data-bs-toggle="modal" data-bs-target="#detailsItemModal" onclick="populateAndShowModal('@item.Id')">
+                                        <img src="@Url.Content(@item.Image)" alt="@item.MenuName" class="card-img-top">
+                                        <div class="pb-3 pt-4 px-4">
+                                            <h5 class="font-weight-bold">@item.MenuName</h5>
+                                            <p class="card-text">@TruncateWords(@item.Ingredient, 6)</p>
+                                            <p class="price_menuitem">@item.Price.ToString("N2") €</p>
                                         </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center mb-3">
+                                        <div class="emoji-feedback">
+                                            <span>🎉</span>
+                                            <span>👍</span>
+                                            <span>😊</span>
+                                            <span>👍</span>
+                                            <span style="color:white;font-weight:700;">added</span>
+                                        </div>
+                                        <button class="btn basket_button" onclick="addToBasket(event, @item.Id); animateEmoji(this);">Add to basket</button>
                                     </div>
                                 </div>
                             </div>
@@ -196,3 +210,41 @@
 </div>
 
 <partial name="HelperMethods/_ReusableModal" model="new ReusableModalModel{}" />
+@section Scripts {
+    <script>
+           document.addEventListener('DOMContentLoaded', function () {
+                var header = document.getElementById('menu_list_sticky_header');
+
+               window.addEventListener('scroll', function () {
+
+               if (window.scrollY > 450) {
+                   header.classList.add('sticky');
+               } else if (window.scrollY < 450) {
+                   header.classList.remove('sticky');
+               }
+               });
+            });
+
+            function animateEmoji(button) {
+                // Find the closest emoji-feedback container to the clicked button
+                var emojiFeedback = button.closest('.menu_item_page').querySelector('.emoji-feedback');
+                gsap.set(emojiFeedback, { display: 'block' });
+
+                // Animate each emoji
+                gsap.utils.toArray(emojiFeedback.children).forEach((emoji, index) => {
+                    var isText = emoji.textContent.includes("added");
+                    var duration = isText ? 4 : 2;
+                    var randomXOffset = Math.random() * 100 - 50;
+                    var randomYOffset = Math.random() * 100 - 150;
+
+                    gsap.fromTo(emoji,
+                        { y: 0, x: 0, opacity: 1 },
+                        { duration: duration, y: randomYOffset, x: randomXOffset, opacity: 0, ease: "power1.out" });
+                });
+
+                // Hide the container after all animations are done
+                gsap.to(emojiFeedback, { duration: 4, delay: 2, display: 'none' });
+            }
+
+    </script>
+}

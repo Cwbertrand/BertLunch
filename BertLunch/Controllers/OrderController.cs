@@ -1,9 +1,11 @@
 ﻿using BertLunch.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Model;
 using Model.Data;
 using System.Globalization;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BertLunch.Controllers
 {
@@ -26,6 +28,12 @@ namespace BertLunch.Controllers
         [HttpPost("createOrder")]
         public IActionResult CreateOrder()
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                // Redirect to the login page with a custom return URL
+                return Redirect($"/Account/Security/Login?ReturnUrl={Uri.EscapeDataString("/PaymentPage/Index")}");
+
+            }
             try
             {
                 var user = _context.Users.FirstOrDefault(x => x.UserName == User.Identity.Name);
@@ -71,16 +79,22 @@ namespace BertLunch.Controllers
                 }
 
                 var subtotal = itemsOrdered.Sum(item => item.Price * item.Quantity);
+                var date = DateTime.Now;
+                var reference = date.ToString("ddMMyyyy")+ '-' + Guid.NewGuid().ToString().Substring(0, 15).Replace("-", "");
                 var reservation = new Reservation
                 {
                     OrderItems = itemsOrdered,
                     Subtotal = subtotal,
                     User = user,
-                    ReservationDate = scheduledDateTime
+                    ReservationDate = scheduledDateTime,
+                    CommandNumber = reference
                 };
+
                 _context.Reservations.Add(reservation);
-                //_context.SaveChanges();
-                return Redirect("~/PaymentPage/Index");
+                _context.SaveChanges();
+                return Redirect($"~/PaymentPage/Index?command={reservation.CommandNumber}");
+
+                //return Redirect("~/PaymentPage/Index");
             }
             catch (Exception ex)
             {

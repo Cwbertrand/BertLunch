@@ -5,13 +5,28 @@ using Model;
 using BertLunch.Services;
 using Stripe;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using QuestPDF.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("BertLunchContextConnection")
-                       ?? throw new InvalidOperationException("Connection string 'BertLunchContextConnection' not found.");
 
-builder.Services.AddDbContext<BertLunchContext>(options =>
-    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+
+if (environment == "Development")
+{
+    var connectionString = builder.Configuration.GetConnectionString("BertLunchContextConnection")
+                        ?? throw new InvalidOperationException("Connection string 'BertLunchContextConnection' not found.");
+    builder.Services.AddDbContext<BertLunchContext>(options =>
+        options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+}
+else
+{
+    // var connectionString = builder.Configuration.GetConnectionString("BertLunchContextConnection")
+    //                     ?? throw new InvalidOperationException("Connection string 'BertLunchContextConnection' not found.");
+    // builder.Services.AddDbContext<BertLunchContext>(options =>
+    //     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+}
+
 
 builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>()
@@ -29,12 +44,25 @@ builder.Services.AddRazorPages(opt => opt.Conventions.AuthorizeFolder("/Admin", 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(30); // Set session timeout as needed
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Set session timeout
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
 
+// Registered Basket service
 builder.Services.AddScoped<BasketService>();
+
+// QuestPdf licence for the free version
+QuestPDF.Settings.License = LicenseType.Community;
+
+// Register custom PDF generator service
+builder.Services.AddScoped<PdfGeneratorService>();
+
+// Default redirect the user to this route if the user isn't connected
+builder.Services.Configure<CookieAuthenticationOptions>(IdentityConstants.ApplicationScheme, options =>
+{
+    options.LoginPath = "/Account/Security/Login";
+});
 
 // Add services to the container.
 builder.Services.AddRazorPages();

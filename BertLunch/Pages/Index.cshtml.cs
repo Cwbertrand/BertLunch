@@ -11,6 +11,7 @@ namespace BertLunch.Pages
         private readonly BertLunchContext _context;
 
         public List<MenuItem> MenuItem { get; set; }
+        public List<Review> Reviews { get; set; }
         
         public IndexModel(BertLunchContext context)
         {
@@ -27,6 +28,13 @@ namespace BertLunch.Pages
                         .Include(x => x.MenuCategory)
                         .Where(x => x.CategoryId == 8)
                         .Take(3).ToListAsync();
+            }
+
+            if (_context.Reviews != null)
+            {
+                Reviews = await _context.Reviews
+                    .Include(x => x.User)
+                    .Take(3).ToListAsync();
             }
 
         }

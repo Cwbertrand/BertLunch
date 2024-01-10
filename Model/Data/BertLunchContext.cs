@@ -17,6 +17,7 @@ public class BertLunchContext : IdentityDbContext<AppUser>
     public DbSet<MenuCategory> MenuCategories { get; set; }
     public DbSet<OrderItem> OrderItems { get; set; }
     public DbSet<Reservation> Reservations { get; set; }
+    public DbSet<Review> Reviews { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -33,6 +34,13 @@ public class BertLunchContext : IdentityDbContext<AppUser>
             .HasOne(mi => mi.MenuCategory)
             .WithMany(c => c.MenuItems)
             .HasForeignKey(mi => mi.MenuCategoryId)
+            .OnDelete(DeleteBehavior.SetNull);
+        
+        // Setting the Review to be null when user delete's the account
+        builder.Entity<Review>()
+            .HasOne(u => u.User)
+            .WithMany(x => x.UserReviews)
+            .HasForeignKey(x => x.AppUserId)
             .OnDelete(DeleteBehavior.SetNull);
     }
 

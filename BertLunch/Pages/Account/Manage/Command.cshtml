@@ -1,7 +1,10 @@
 ﻿@page
+@using BertLunch.Pages.HelperMethods
+@using Microsoft.AspNetCore.Mvc.TagHelpers
 @model BertLunch.Pages.Account.Manage.CommandModel
 @{
     ViewData["Title"] = "Mes commandes";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 <style>
     body {
@@ -10,11 +13,166 @@
 </style>
 
 <main class="container-fluid">
-    <div class="row account">
+    <div class="row account-section">
         <div class="col-md-3">
             <partial name="_ManageNav" />
         </div>
-        <section class="col-9 ">
+        <section class="col-9">
+            <div class="container pt-4">
+                <h4 class="account-heading">Les commandes</h4>
+            </div>
+            
+            
+
+            <button type="button" class="btn btn-account btn-modify" data-bs-toggle="modal" data-bs-target="#reviewModal">
+                Your remark
+            </button>
+
+            <div class="row">
+                @foreach (var item in Model.Reservations)
+                {
+                    <div class="col-12 py-3">
+                        <div class="accordion-item rounded">
+                            <div class="order_header p-2">
+                                <h5>Order #@item.CommandNumber - @item.CreateDate.ToString("D")</h5>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <p class="order-detail-header">Invoice Information</p>
+                                        <div>
+                                            Name: John Doe <br/>
+                                            Payment Status:
+                                            @if (@item.PaymentStatus.ToString().Contains("PaidByCard") || @item.PaymentStatus.ToString().Contains("PaidByCash"))
+                                            {
+                                                <span class="text-dark fw-bold">Payment regulated</span> <br />
+                                            }
+                                            else
+                                            {
+                                                <span class="text-dark fw-bold">Payment failed</span> <br />
+                                            }
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <p class="order-detail-header">Items</p>
+                                    </div>
+                                </div>
+                            
+                                @foreach (var orderItems in item.OrderItems)
+                                {
+                                    <div class="row mb-2">
+                                        <div class="col-md-2">
+                                            <img src="@Url.Content(@orderItems.MenuOrderHistories.Image)" alt="@orderItems.MenuOrderHistories.MenuOrderName" class="order-item-img">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="text-dark align-text-end">@orderItems.MenuOrderHistories.MenuOrderName</p>
+                                            <p class="text-dark">A delicious gourmet sandwich with fresh ingredients and a tasty sauce.</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p class="text-dark text-end">Quantity: <span class="fw-bold">@orderItems.Quantity</span></p>
+                                            <p class="text-dark text-end">Price: <span class="fw-bold">@orderItems.Price.ToString("N2") €</span></p>
+                                        </div>
+
+                                    </div>
+                                    <div class="horizontal_line col-12"></div>
+                                }
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <form method="post" asp-page-handler="GeneratePdf" enctype="multipart/form-data">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="reservationId" value="@item.Id" />
+                                        <button type="submit" class="btn btn-primary invoice-download-btn">Download Invoice</button>
+                                    </form>
+                                    <p class="total-paid">Total Paid: @item.Subtotal.ToString("N2") €</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <partial name="../HelperMethods/Pagination" model="new PaginationModel { PageIndex = Model.PageIndex, PageSize = Model.PageSize, PageCount = Model.PageCount }" />
         </section>
     </div>
 </main>
+
+
+
+<div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered review_modal">
+        <div class="modal-content modal-content-account">
+            <div class="modal-header">
+                <h5 class="modal-title" id="reviewModalLabel">How do you feel about us?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="review_form" method="post" asp-page-handler="Review">
+                    <textarea class="review_textarea" name="comment" placeholder="Your Comment"></textarea>
+                    <div id="rating" class="star-rating pb-4">
+                        @* JavaScript generates stars here *@
+                    </div>
+                    <input type="hidden" name="rating" id="rating-value" />
+                    <button type="submit">Submit Comment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script>
+        const ratingElement = document.getElementById('rating');
+        const stars = [];
+        let selectedRating = 0;
+
+        for (let i = 1; i <= 5; i++) {
+            const star = document.createElement('span');
+            star.innerHTML = '&#9733;';
+            star.className = 'star';
+            star.dataset.ratingValue = i;
+            star.addEventListener('mouseenter', highlightStars);
+            star.addEventListener('mouseleave', resetStars);
+            star.addEventListener('click', setRating);
+            ratingElement.appendChild(star);
+            stars.push(star);
+        }
+
+        function highlightStars(e) {
+            const hoverRating = e.target.dataset.ratingValue;
+            stars.forEach((star, index) => {
+                if (index < hoverRating) {
+                    star.classList.add('highlight');
+                } else if (index >= selectedRating) {
+                    star.classList.remove('highlight');
+                }
+            });
+        }
+
+        function resetStars() {
+            updateStars();
+        }
+
+        function setRating(e) {
+            selectedRating = e.target.dataset.ratingValue;
+            document.getElementById('rating-value').value = selectedRating;
+            updateStars();
+        }
+
+        function updateStars() {
+            stars.forEach((star, index) => {
+                if (index < selectedRating) {
+                    star.classList.add('highlight');
+                } else {
+                    star.classList.remove('highlight');
+                }
+            });
+        }
+
+
+
+    </script>
+}

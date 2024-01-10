@@ -2,7 +2,7 @@
     fetch('/basket/product_summary', { method: 'get' })
         .then(response => response.json())
         .then(data => {
-            document.getElementById("cart_quantity").textContent = data.totalQuantity;
+            data.totalQuantity == 0 ? '' : document.getElementById("cart_quantity").textContent = data.totalQuantity;
             document.getElementById("cart_total_price").textContent = `${data.totalPrice.toFixed(2)} \u20AC`;
         })
         .catch(error => {

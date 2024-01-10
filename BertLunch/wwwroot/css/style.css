@@ -5,7 +5,7 @@
 /**=== VARIABLES ===*/
 
 /**=== GENERAL STYLES =====*/
-.flex-center-start {
+/*.flex-center-start {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -37,7 +37,7 @@ a,
 button:focus {
     text-decoration: none !important;
     outline: none !important;
-}
+}*/
 
 /*h1,
 h2,
@@ -46,7 +46,7 @@ h3 {
 }*/
 
 
-label {
+/*label {
     color: #7e7e7e;
     cursor: pointer;
     font-size: 14px;
@@ -114,7 +114,7 @@ label {
 
 .boxed-btn3.large-width {
     width: 220px;
-}
+}*/
 /*=== GENERAL STYLES END =====*/
 
 /**=== STICKY HEADER STYLES =====*/
@@ -140,7 +140,7 @@ label {
 }*/
 
 /**=== FOOD SECTION STYLES =====*/
-.food_section .box {
+/*.food_section .box {
     position: relative;
     margin-top: 25px;
     background-color: #ffffff;
@@ -234,115 +234,27 @@ label {
 
 .food_section .btn-box a:hover {
     background-color: #e69c00;
-}
+}*/
 
 
 /**=== ABOUT SECTION STYLES =====*/
-.about_area {
+/*.about_area {
     background-color: var(--secondary-color);
     margin: 100px 0px;
     padding-top: 100px;
     padding-bottom: 100px;
-}
+}*/
 
 
 /**=== MENU SECTION STYLES =====*/
-.Delicious_area {
-    padding-top: 30px;
-}
-.section_title h3 {
-    font-size: 50px;
-    font-weight: 700;
-    font-family: var(--h3-letters);
-    color: var(--primary-color);
-    position: relative;
-    z-index: 0;
-    padding-bottom: 0;
-}
-.Delicious_area .tablist_menu {
-    margin-bottom: 20px;
-}
-
-.Delicious_area .tablist_menu .nav {
-    margin-bottom: 0px;
-}
-.Delicious_area .tablist_menu .nav li {
-    margin: 0 25px;
-}
-.Delicious_area .tablist_menu .nav li a {
-    padding: 0 12px 27px 12px;
-    transition: 0.3s;
-}
-
-.Delicious_area .tablist_menu .nav li a .single_menu .icon img {
-    width: 50px;
-    margin-bottom: 10px;
-    color: #1664ad;
-}
-
-.Delicious_area .tablist_menu .nav li a .single_menu h4 {
-    margin-bottom: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #596672;
-    font-family: "Poppins", sans-serif;
-}
-
-.Delicious_area .tablist_menu .nav li a.active {
-    position: relative;
-}
-
-.Delicious_area .tablist_menu .nav li a.active .single_menu .icon i {
-    color: #DB9A64;
-}
-.Delicious_area .tablist_menu .nav li a.active:before {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    content: '';
-    background: #DB9A64;
-    bottom: 0;
-}
-.Delicious_area .single_delicious {
-    margin-bottom: 50px;
-}
-.Delicious_area .single_delicious .thumb,
-.Delicious_area .single_delicious .thumb img {
-    border-radius: 10px;
-}
-
-.Delicious_area .single_delicious .info {
-    padding-left: 28px;
-}
-.Delicious_area .single_delicious .info h5 {
-    color: #001D38;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
-}
-.Delicious_area .single_delicious .info p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-bottom: 0;
-    margin-top: 15px;
-    margin-bottom: 16px;
-}
-
-.Delicious_area .single_delicious .info span {
-    display: block;
-    font-weight: 400;
-    font-size: 26px;
-    color: #DB9A64;
-}
 
 /*=== MENU SECTION STYLES ENDS =====*/
 
 /**=== GALARY SECTION STYLES =====*/
 
-.gallery-main .title-caption{
+/*.gallery-main .title-caption{
 	color: #666;
-}
+}*/
 
 /* new gallery */
 
@@ -351,7 +263,7 @@ label {
   * 	BASKET PAGE
 * ======================================================= */
 
-.pt-4 .basket_page {
+/*.pt-4 .basket_page {
     text-transform: uppercase !important;
     font-weight: 800;
     position: relative;
@@ -422,7 +334,7 @@ label {
     color: red;
     font-size: 20px;
 }
-
+*/
 /*.sub_total_section {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 20px;

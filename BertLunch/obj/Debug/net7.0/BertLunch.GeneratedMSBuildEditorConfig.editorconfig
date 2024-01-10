@@ -172,12 +172,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFza2V0XEJhc2tldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Basket/EmptyBasket.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFza2V0XEVtcHR5QmFza2V0LmNzaHRtbA==
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Basket/_EmptyBasket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFza2V0XF9FbXB0eUJhc2tldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/HelperMethods/Pagination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGVscGVyTWV0aG9kc1xQYWdpbmF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/laragon/www/Projet fin annee/project aspnet/BertLunch/BertLunch/Pages/HelperMethods/Truncate.cshtml]

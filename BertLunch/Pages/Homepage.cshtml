@@ -1,98 +1,92 @@
 ﻿@page
-@model BertLunch.Pages.HomepageModel
+@using BertLunch.Pages.HelperMethods;
+@model IndexModel
 @{
     ViewData["Title"] = "Home page";
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
-<!-- food section -->
-<section class="food_section layout_padding-bottom">
+
+<section class="hero general_section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.10),rgba(0, 0, 0, 0.6)),url('/img/homepage/home_page.jpg');">
     <div class="container">
-        <div class="pt-5 mt-2">
-            <h2 class="text-center">Delicious Food For You</h2>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-xl-9 col-md-9 col-md-12">
+                <div class="hero_text text-center">
+                    <h1>
+                        Fresh and Delicious Food
+                        For your Health
+                    </h1>
+                </div>
+            </div>
         </div>
-
-        <div class="filters-content">
-            <div class="row grid">
-
-                <div id="removedItemInfoContainer"></div>
-
-                @* @foreach (var item in Model.MenuItem)
-                {
-                    <div class="col-sm-6 col-lg-3 all pizza">
-                        <div class="box">
-                            <div>
-                                <div class="img-box">
-                                    <img src="@Url.Content(@item.Image)" alt="@item.MenuName">
+    </div>
+</section>
+<section class="food_and_about general_section">
+    <div class="py-5">
+        <h2 class="text-center">Our precious meals</h2>
+        <div class="new_overlay">
+            <div class="container">
+                <div class="row envelop_card">
+                    @foreach (var item in Model.MenuItem)
+                    {
+                        <div class="col-sm-6 col-lg-4 p-3 overlay_color">
+                            <div class="menu_item" data-bs-toggle="modal" data-bs-target="#detailsItemModal" onclick="populateAndShowModal('@item.Id')">
+                                <div class="menu_item_overlay">
+                                    <img data-aos="fade-right" data-aos-duration="2000"
+                                         src="@Url.Content(@item.Image)" alt="@item.MenuName" class="card-img-top h-100">
                                 </div>
-                                <div class="detail-box">
-                                    <h5>@item.MenuName</h5>
-                                    <p class="text-white">
-                                        @TruncateWords(@item.Ingredient, 10)
-                                    </p>
-                                    <div class="options">
-                                        <h6>@item.Price €</h6>
-                                        <a href="javascript:void(0);" onclick="addToBasket(@item.Id)">
-                                            <i class="fa-solid fa-cart-shopping text-white"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                                <div data-aos="fade-left" class="menu_caption">@item.MenuName</div>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+                <div class="separator"></div>
+                <div class="row about_section">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="about_thumb2 d-flex">
+                            <div class="img_1">
+                                <img data-aos="fade-up" data-aos-duration="2000" src="img/about/1.png" alt="">
+                            </div>
+                            <div class="img_2">
+                                <img data-aos="fade-down" data-aos-duration="2000" src="img/about/2.png" alt="">
                             </div>
                         </div>
                     </div>
-                } *@
-
+                    <div class="col-xl-5 col-lg-5">
+                        <div class="about_info" data-aos="fade-right" data-aos-duration="700">
+                            <div class="pb-3">
+                                <h3>
+                                    We Serve Fresh and <br>
+                                    Delicious Food
+                                </h3>
+                            </div>
+                            <p>
+                                Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare
+                                dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
+                                sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.
+                            </p>
+                            <a href="#" class="line-button">Learn More...</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- about_area_start -->
-<div class="about_area">
-    <div class="container">
+<section class="parallax_section" style="background-image: url('/img/homepage/paralex.jpg');"></section>
+<section class="gallery_section" style="background-image: url('/img/homepage/texture_wood.jpg');">
+    <div class="container h-100">
         <div class="row">
-            <div class="col-xl-7 col-lg-7">
-                <div class="about_thumb2 d-flex">
-                    <div class="img_1">
-                        <img src="img/about/1.png" alt="">
-                    </div>
-                    <div class="img_2">
-                        <img src="img/about/2.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-5 col-lg-5">
-                <div class="about_info">
-                    <div class="section_title">
-                        <h3>
-                            We Serve Fresh and <br>
-                            Delicious Food
-                        </h3>
-                    </div>
-                    <p>
-                        Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare
-                        dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
-                        sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.
-                    </p>
-                    <a href="#" class="line-button">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- about_area_end -->
-<!-- start of gallery -->
-<div id="gallery" class="gallery-main pb-3 mb-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+            <div class="col-12">
+                <div class="wow fadeIn pt-5 mt-3" data-wow-duration="1s" data-wow-delay="0.1s" data-aos="fade-down" data-aos-duration="2000">
                     <h2 class="block-title text-center">
                         Our Gallery
                     </h2>
-                    <p class="title-caption text-center">There are many variations of passages of Lorem Ipsum available </p>
+                    <p class="title-caption text-center text-dark">There are many variations of passages of Lorem Ipsum available </p>
                 </div>
-                <div class="gal-container clearfix row">
+                <div class="gal-container clearfix row" data-aos="fade-up" data-aos-duration="700">
                     <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
                         <div class="box">
                             <a href="#" data-toggle="modal" data-target="#1">
@@ -297,7 +291,14 @@
             </div>
         </div>
     </div>
-</div>
-<!-- end gallery-main -->
+</section>
 
-<script src="~/js/basket.js" asp-append-version="true"></script>
+<partial name="HelperMethods/_ReusableModal" model="new ReusableModalModel{}" />
+@section Scripts {
+    <script>
+        AOS.init();
+    </script>
+}
+
+
+
