@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FcOtNhAs2egjZ7NwShn9rnsH8MWASgt2n1eyWCT9QBI=",
+  "Hash": "7YzXPO/5oqd7OUuw57NXpgp5nQNgnzSU1glq1sVW7jE=",
   "Source": "BertLunch",
   "BasePath": "_content/BertLunch",
   "Mode": "Default",
@@ -1647,23 +1647,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\basket.js"
-    },
-    {
-      "Identity": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\js\\basketssss.js",
-      "SourceId": "BertLunch",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\",
-      "BasePath": "_content/BertLunch",
-      "RelativePath": "js/basketssss.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\basketssss.js"
     },
     {
       "Identity": "C:\\laragon\\www\\Projet fin annee\\project aspnet\\BertLunch\\BertLunch\\wwwroot\\js\\main.js",

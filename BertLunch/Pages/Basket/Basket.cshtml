@@ -10,6 +10,15 @@
     body{
         background: rgba(131, 140, 144, 0.4);
     }
+
+    .display_icon {
+        display: block !important;
+    }
+
+    .dont_display_icon,
+    .delete_item {
+        display: none !important;
+    }
 </style>
 @if ((Model.BasketItems != null && Model.BasketItems.Any()) || Model.BasketItems.Count != 0)
 {
@@ -25,9 +34,9 @@
                             <div class="pb-4"></div>
                             @foreach (var item in Model.BasketItems)
                             {
-                                <div class="pb-2 px-3 basket_item_card">
+                                <div class="pb-2 px-3 basket_item_card" id="delete_item_@item.ProductId">
                                     <div class="d-flex justify-content-end">
-                                        <button class="basket_close_item_btn" onclick="deleteFromBasket(event, @item.ProductId)"><i class="fa-solid fa-xmark"></i></button>
+                                        <button id="delete_item_@item.ProductId" class="basket_close_item_btn" onclick="deleteFromBasket(event, @item.ProductId)"><i class="fa-solid fa-xmark"></i></button>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 to_know">
@@ -42,16 +51,18 @@
                                         <div class="col-sm-3 basket_item_centralization align-items-center">
                                             <div class="add_reduce_btns row d-flex justify-content-between">
                                                 <div class="col-4 btn_col">
-                                                    <button onclick="removeFromBasket(event, @item.ProductId)">
-                                                        @if (item.Quantity == 1)
+                                                    <button onclick="removeFromBasket(event, @item.ProductId)" id="item_@item.ProductId">
+                                                        <i class="text-danger fa-solid fa-trash-can trash_block"></i>
+                                                        <i class="fa-solid fa-minus minus_block"></i>
+                                                        @* @if (item.Quantity == 1)
                                                         {
                                                             <i class="text-danger fa-solid fa-trash-can"></i>
                                                         }
                                                         else
                                                         {
 
-                                                            <i class="fa-solid fa-minus"></i>
-                                                        }
+                                                            <i class="fa-solid fa-minus minus_block"></i> *@
+                                                        
                                                     </button>
                                                 </div>
                                                 <div class="col-4 text-center">
